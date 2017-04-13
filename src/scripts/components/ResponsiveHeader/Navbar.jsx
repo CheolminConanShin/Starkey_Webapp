@@ -24,7 +24,6 @@ export default class Navbar extends React.Component {
                 position: 'relative',
                 top: '0px',
                 minHeight: '50px',
-                marginBottom: '20px',
                 display: 'block',
                 boxSizing: 'border-box'
             },

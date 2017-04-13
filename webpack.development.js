@@ -1,4 +1,11 @@
 var path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
+    template: './client/index.html',
+    filename: 'index.html',
+    inject: 'body'
+});
 
 module.exports = {
   devtool: 'source-map',
@@ -17,16 +24,13 @@ module.exports = {
   },
   module: {
     loaders: [
-      {
-        // test for both js and jsx
-        test: /\.jsx?$/,
-
-        // use babel loader with Stage 1 features
-        loader: 'babel?stage=0',
-
-        // operate only on our app directory
-        include: path.join(__dirname, 'src')
-      }
+      {test: /\.js$/, loader: 'babel?stage=0', exclude: /node_modules/},
+      {test: /\.jsx$/, loader: 'babel?stage=0', exclude: /node_modules/},
     ]
-  }
+  },
+  devServer: {
+      publicPath: "/",
+      contentBase: "./www",
+      historyApiFallback: true
+  },
 };
