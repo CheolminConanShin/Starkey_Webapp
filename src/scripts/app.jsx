@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import ResponsiveHeader from './components/ResponsiveHeader'
+import ResponsiveHeader from './components/ResponsiveHeader/'
 import Home from './components/Home'
 import CenterPhoto from './components/CenterPhoto'
 

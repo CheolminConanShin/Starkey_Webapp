@@ -2,13 +2,12 @@ var path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-    template: './client/index.html',
+    template: './src/index.html',
     filename: 'index.html',
     inject: 'body'
 });
 
 module.exports = {
-  devtool: 'source-map',
   entry: [
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/dev-server',
@@ -24,8 +23,13 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'babel?stage=0', exclude: /node_modules/},
-      {test: /\.jsx$/, loader: 'babel?stage=0', exclude: /node_modules/},
+      {
+        loader: "babel?stage=0",
+        include: [
+          path.resolve(__dirname, "src"),
+        ],
+        test: [/\.jsx?$/,/\.js$/]
+      }
     ]
   },
   devServer: {
@@ -33,4 +37,5 @@ module.exports = {
       contentBase: "./www",
       historyApiFallback: true
   },
+  plugins: [HtmlWebpackPluginConfig]
 };
