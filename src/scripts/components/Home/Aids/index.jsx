@@ -9,8 +9,6 @@ const content = {
   buttonUrl: 'http://www.starkey.co.kr/product/product/bojung_custom.php'
 }
 
-
-
 export var HomeAids = (
   Frame(content)
 )

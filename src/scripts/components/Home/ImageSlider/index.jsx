@@ -4,18 +4,20 @@ var Slider = require('react-slick');
 const styles = {
     container: {
       margin: "0 auto",
-      padding: 20,
-      width: "70%",
-      height: "calc(100% - 40px)",
-      color: "#333",
-      background: "#FFE8DD"
+      padding: 0,
+      width: "100%",
+      maxWidth: "900px",
+      height: "calc(100%)",
+      background: "#FAF9F4"
   }
 }
 
 const settings = {
   dots: true,
   adaptiveHeight: true,
-  autoplay: true
+  autoplay: true,
+  arrows: false,
+  fade: true
 };
 
 const ImageSlider = (
