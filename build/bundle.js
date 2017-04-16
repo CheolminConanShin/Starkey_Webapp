@@ -27103,7 +27103,7 @@
 	                    backgroundColor: 'transparent',
 	                    boxSizing: 'border-box',
 
-	                    fontSize: '18px',
+	                    fontSize: '23px',
 	                    color: '#6D6875',
 
 	                    ':hover': {
@@ -27115,6 +27115,7 @@
 	                    },
 
 	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+	                        fontSize: '20px',
 	                        marginLeft: '-15px'
 	                    }
 	                },
@@ -27160,8 +27161,8 @@
 	                },
 	                iconBar: {
 	                    display: 'block',
-	                    width: '22px',
-	                    height: '2px',
+	                    width: '30px',
+	                    height: '3px',
 	                    borderRadius: '1px',
 	                    backgroundColor: '#888',
 	                    boxSizing: 'border-box'
@@ -27657,7 +27658,7 @@
 	        boxShadow: '0 6px 12px #C9C9C9',
 	        boxSizing: 'border-box',
 
-	        '@media (max-width: 767px)': {
+	        '@media screen and (min-device-width: 767px) and (min-width: 767px)': {
 	            position: 'static',
 	            float: 'none',
 	            width: 'auto',
@@ -27688,7 +27689,7 @@
 	            backgroundColor: '#f5f5f5'
 	        },
 
-	        '@media (max-width: 767px)': {
+	        '@@media screen and (min-device-width: 767px) and (min-width: 767px)': {
 	            backgroundColor: 'transparent',
 	            color: '#777',
 
@@ -27800,6 +27801,11 @@
 
 	var _ImageSlider2 = _interopRequireDefault(_ImageSlider);
 
+	var ImageSliderStyle = {
+	  height: '50vw',
+	  maxHeight: '500px'
+	};
+
 	var Home = (function (_React$Component) {
 	  _inherits(Home, _React$Component);
 
@@ -27815,7 +27821,7 @@
 	      return _react2['default'].createElement(
 	        'div',
 	        null,
-	        _react2['default'].createElement(_Section2['default'], { additionalStyle: { height: "45vw" }, title: 'Section1', content: _ImageSlider2['default'] }),
+	        _react2['default'].createElement(_Section2['default'], { additionalStyle: ImageSliderStyle, title: 'Section1', content: _ImageSlider2['default'] }),
 	        _react2['default'].createElement(_Section2['default'], { additionalStyle: { height: "25vw" }, title: 'Section2', content: _About.HomeAbout }),
 	        _react2['default'].createElement(_Section2['default'], { additionalStyle: { height: "25vw" }, title: 'Section3', content: _Aids.HomeAids }),
 	        _react2['default'].createElement(_Section2['default'], { additionalStyle: { height: "25vw" }, title: 'Section4', content: _Blog.HomeBlog }),

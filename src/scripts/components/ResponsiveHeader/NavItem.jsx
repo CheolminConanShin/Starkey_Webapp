@@ -11,9 +11,11 @@ export default class NavItem extends React.Component {
                 position: 'relative',
                 display: 'block',
                 boxSizing: 'border-box',
+                marginTop: '10px',
 
                 '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
-                    float: 'left'
+                    float: 'left',
+                    marginTop: '0px'
                 }
             },
             link: {

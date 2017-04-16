@@ -13,12 +13,13 @@ export default class NavbarItems extends React.Component {
                 paddingLeft: '0',
                 boxSizing: 'border-box',
 
-                fontSize: '17px',
+                fontSize: '23px',
                 float: 'left',
                 margin: '0',
                 marginLeft: '50',
 
                 '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+                    fontSize: '17px',
                     float: 'right',
                     marginLeft: '0'
                 }
