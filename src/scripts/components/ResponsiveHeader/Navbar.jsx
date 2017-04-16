@@ -18,16 +18,17 @@ const defStyle = {
         marginRight: 'auto',
         marginLeft: 'auto',
         boxSizing: 'border-box',
+        width: '80%',
 
-        '@media (min-width: 768px)': {
-            width: '750px'
-        },
-        '@media (min-width: 992px)': {
-            width: '970px'
-        },
-        '@media (min-width: 1200px)': {
-            width: '1170px'
-        }
+        // '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+        //     width: '750px'
+        // },
+        // '@media (min-width: 992px)': {
+        //     width: '970px'
+        // },
+        // '@media (min-width: 1200px)': {
+        //     width: '1170px'
+        // }
     },
     pseudoBefore: {
         display: 'table',

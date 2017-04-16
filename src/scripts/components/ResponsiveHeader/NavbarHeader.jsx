@@ -12,7 +12,7 @@ export default class NavbarHeader extends React.Component {
                 marginLeft: '-15px',
                 boxSizing: 'border-box',
 
-                '@media (min-width: 768px)': {
+                '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
                     float: 'left',
                     marginRight: '0',
                     marginLeft: '0'
@@ -27,7 +27,7 @@ export default class NavbarHeader extends React.Component {
                 backgroundColor: 'transparent',
                 boxSizing: 'border-box',
 
-                fontSize: '18px',
+                fontSize: '23px',
                 color: '#6D6875',
 
                 ':hover': {
@@ -38,7 +38,8 @@ export default class NavbarHeader extends React.Component {
                     color: '#5e5e5e'
                 },
 
-                '@media (min-width: 768px)': {
+                '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+                    fontSize: '20px',
                     marginLeft: '-15px'
                 }
             },
@@ -66,7 +67,7 @@ export default class NavbarHeader extends React.Component {
                   outline: '0',
                   backgroundColor: '#ddd'
                 },
-                '@media (min-width: 768px)': {
+                '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
                   display: 'none'
                 }
             },
@@ -84,8 +85,8 @@ export default class NavbarHeader extends React.Component {
               },
             iconBar: {
                 display: 'block',
-                width: '22px',
-                height: '2px',
+                width: '30px',
+                height: '3px',
                 borderRadius: '1px',
                 backgroundColor: '#888',
                 boxSizing: 'border-box'

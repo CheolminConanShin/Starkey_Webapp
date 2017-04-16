@@ -12,7 +12,7 @@ export default class NavItem extends React.Component {
                 display: 'block',
                 boxSizing: 'border-box',
 
-                '@media (min-width: 768px)': {
+                '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
                     float: 'left'
                 }
             },
@@ -39,7 +39,7 @@ export default class NavItem extends React.Component {
                     backgroundColor: 'transparent'
                 },
 
-                '@media (min-width: 768px)': {
+                '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
                     paddingTop: '15px',
                     paddingBottom: '15px'
                 }

@@ -25467,17 +25467,18 @@
 	        marginRight: 'auto',
 	        marginLeft: 'auto',
 	        boxSizing: 'border-box',
+	        width: '80%'
 
-	        '@media (min-width: 768px)': {
-	            width: '750px'
-	        },
-	        '@media (min-width: 992px)': {
-	            width: '970px'
-	        },
-	        '@media (min-width: 1200px)': {
-	            width: '1170px'
-	        }
 	    },
+	    // '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+	    //     width: '750px'
+	    // },
+	    // '@media (min-width: 992px)': {
+	    //     width: '970px'
+	    // },
+	    // '@media (min-width: 1200px)': {
+	    //     width: '1170px'
+	    // }
 	    pseudoBefore: {
 	        display: 'table',
 	        content: ' ',
@@ -26967,7 +26968,7 @@
 	                    display: 'block',
 	                    boxSizing: 'border-box',
 
-	                    '@media (min-width: 768px)': {
+	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
 	                        float: 'left'
 	                    }
 	                },
@@ -26994,7 +26995,7 @@
 	                        backgroundColor: 'transparent'
 	                    },
 
-	                    '@media (min-width: 768px)': {
+	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
 	                        paddingTop: '15px',
 	                        paddingBottom: '15px'
 	                    }
@@ -27087,7 +27088,7 @@
 	                    marginLeft: '-15px',
 	                    boxSizing: 'border-box',
 
-	                    '@media (min-width: 768px)': {
+	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
 	                        float: 'left',
 	                        marginRight: '0',
 	                        marginLeft: '0'
@@ -27113,7 +27114,7 @@
 	                        color: '#5e5e5e'
 	                    },
 
-	                    '@media (min-width: 768px)': {
+	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
 	                        marginLeft: '-15px'
 	                    }
 	                },
@@ -27141,7 +27142,7 @@
 	                        outline: '0',
 	                        backgroundColor: '#ddd'
 	                    },
-	                    '@media (min-width: 768px)': {
+	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
 	                        display: 'none'
 	                    }
 	                },
@@ -27288,12 +27289,13 @@
 	                    boxSizing: 'border-box',
 
 	                    fontSize: '17px',
-	                    float: 'right',
+	                    float: 'left',
 	                    margin: '0',
+	                    marginLeft: '50',
 
-	                    '@media (max-width: 768px)': {
-	                        float: 'left',
-	                        marginLeft: '50'
+	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+	                        float: 'right',
+	                        marginLeft: '0'
 	                    }
 	                },
 	                collapse: {
@@ -27310,7 +27312,7 @@
 	                    boxSizing: 'border-box',
 	                    display: 'none',
 
-	                    '@media (min-width: 768px)': {
+	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
 	                        marginRight: '0px',
 	                        marginLeft: '0px',
 	                        paddingRight: '0px',
@@ -27450,7 +27452,7 @@
 	                    display: 'block',
 	                    boxSizing: 'border-box',
 
-	                    '@media (min-width: 768px)': {
+	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
 	                        float: 'left'
 	                    }
 	                },
@@ -27485,7 +27487,7 @@
 	                        color: '#333'
 	                    },
 
-	                    '@media (min-width: 768px)': {
+	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
 	                        paddingTop: '15px',
 	                        paddingBottom: '15px'
 	                    }

@@ -14,12 +14,13 @@ export default class NavbarItems extends React.Component {
                 boxSizing: 'border-box',
 
                 fontSize: '17px',
-                float: 'right',
+                float: 'left',
                 margin: '0',
+                marginLeft: '50',
 
-                '@media (max-width: 768px)': {
-                    float: 'left',
-                    marginLeft: '50'
+                '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+                    float: 'right',
+                    marginLeft: '0'
                 }
             },
             collapse: {
@@ -36,7 +37,7 @@ export default class NavbarItems extends React.Component {
                 boxSizing: 'border-box',
                 display: 'none',
 
-                '@media (min-width: 768px)': {
+                '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
                     marginRight: '0px',
                     marginLeft: '0px',
                     paddingRight: '0px',
