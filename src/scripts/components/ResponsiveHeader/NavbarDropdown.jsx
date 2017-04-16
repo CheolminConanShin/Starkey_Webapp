@@ -5,15 +5,6 @@ import Radium from 'radium';
 export default class NavbarDropdown extends React.Component {
     displayName = 'Navigation bar dropdown button'
 
-    static propTypes = {
-        name: React.PropTypes.string,
-        style: React.PropTypes.object,
-        itemStyle: React.PropTypes.object,
-        index: React.PropTypes.number,
-        activeIndex: React.PropTypes.number,
-        parentCallBack: React.PropTypes.func
-    }
-
     state = {
         open: false
     }
@@ -141,4 +132,13 @@ export default class NavbarDropdown extends React.Component {
           </li>
         );
     }
+}
+
+NavbarDropdown.propTypes = {
+    name: React.PropTypes.string,
+    style: React.PropTypes.object,
+    itemStyle: React.PropTypes.object,
+    index: React.PropTypes.number,
+    activeIndex: React.PropTypes.number,
+    parentCallBack: React.PropTypes.func
 }

@@ -1,16 +1,19 @@
 import React from 'react'
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {HashRouter as Router, Route} from "react-router-dom";
 import ResponsiveHeader from './components/ResponsiveHeader/'
 import Home from './components/Home'
-import CenterPhoto from './components/CenterPhoto'
+import About from './components/Home/About'
+import Aids from './components/Home/Aids'
 
 const Index = (
   <div>
     <ResponsiveHeader/>
-    <Router>
+    <Router history={history}>
       <div>
         <Route exact path="/" component={Home}/>
-        <Route exact path="/centerphoto" component={CenterPhoto}/>
+        <Route exact path="/about" component={About}/>
+        <Route exact path="/contract#" component={About}/>
+        <Route exact path="/question#" component={About}/>
       </div>
     </Router>
   </div>

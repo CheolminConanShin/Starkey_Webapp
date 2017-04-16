@@ -5,13 +5,6 @@ import Radium from 'radium';
 export default class NavItem extends React.Component {
     displayName = 'Navigation bar item'
 
-    static propTypes = {
-        link:  React.PropTypes.string,
-        title: React.PropTypes.string,
-        style: React.PropTypes.object,
-        itemStyle: React.PropTypes.object
-    }
-
     getStyles = () => {
         return {
             base: {
@@ -34,7 +27,7 @@ export default class NavItem extends React.Component {
                 boxSizing: 'border-box',
                 textDecoration: 'none',
                 backgroundColor: 'transparent',
-                color: '#777',
+                color: '#6D6875',
 
                 ':hover': {
                     color: '#333',
@@ -63,4 +56,11 @@ export default class NavItem extends React.Component {
           </li>
         );
     }
+}
+
+NavItem.propTypes = {
+    link:  React.PropTypes.string,
+    title: React.PropTypes.string,
+    style: React.PropTypes.object,
+    itemStyle: React.PropTypes.object
 }

@@ -5,11 +5,6 @@ import Radium from 'radium';
 export default class NavbarItems extends React.Component {
     displayName = 'Navigation list of items'
 
-    static propTypes = {
-        style: React.PropTypes.object,
-        children: React.PropTypes.node
-    }
-
     getStyles = () => {
         let styles = {
             base: {
@@ -18,12 +13,13 @@ export default class NavbarItems extends React.Component {
                 paddingLeft: '0',
                 boxSizing: 'border-box',
 
-                fontFamily: '"Helvetica Neue",Helvetica,Arial,sans-serif',
-                fontSize: '14px',
+                fontSize: '17px',
+                float: 'right',
+                margin: '0',
 
-                '@media (min-width: 768px)': {
+                '@media (max-width: 768px)': {
                     float: 'left',
-                    margin: '0'
+                    marginLeft: '50'
                 }
             },
             collapse: {
@@ -110,4 +106,9 @@ export default class NavbarItems extends React.Component {
             </div>
         );
     }
+}
+
+NavbarItems.propTypes = {
+    style: React.PropTypes.object,
+    children: React.PropTypes.node
 }

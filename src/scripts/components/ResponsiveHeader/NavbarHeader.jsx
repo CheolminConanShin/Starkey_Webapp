@@ -5,13 +5,6 @@ import Radium from 'radium';
 export default class NavbarHeader extends React.Component {
     displayName = 'Navigation bar header'
 
-    static propTypes = {
-        href:        React.PropTypes.string,
-        name:        React.PropTypes.string,
-        headerStyle: React.PropTypes.object,
-        brandStyle:  React.PropTypes.object
-    }
-
     getStyles = () => {
         return {
             header: {
@@ -35,8 +28,7 @@ export default class NavbarHeader extends React.Component {
                 boxSizing: 'border-box',
 
                 fontSize: '18px',
-                color: '#777',
-                fontFamily: '"Helvetica Neue",Helvetica,Arial,sans-serif',
+                color: '#6D6875',
 
                 ':hover': {
                     color: '#5e5e5e'
@@ -141,4 +133,11 @@ export default class NavbarHeader extends React.Component {
             </div>
         );
     }
+}
+
+NavbarHeader.propTypes = {
+    href:        React.PropTypes.string,
+    name:        React.PropTypes.string,
+    headerStyle: React.PropTypes.object,
+    brandStyle:  React.PropTypes.object
 }

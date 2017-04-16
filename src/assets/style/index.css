@@ -1,0 +1,21 @@
+@font-face {
+  font-family: BMdohyeon;
+  src: url("../font/BMDOHYEON_otf.otf") format("opentype");
+}
+
+.slick-slider, .slick-list{
+  height: 100% !important;
+}
+
+.slick-track {
+  height: inherit;
+}
+.slick-slide img {
+  height: inherit;
+  width: 100%;
+}
+
+body {
+  font-family: 'BMdohyeon';
+  color: #6D6875;
+}

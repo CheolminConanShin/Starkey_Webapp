@@ -7,7 +7,7 @@
     "prepublish": "node_modules/babel/bin/babel.js src/ --out-dir lib",
     "lint": "eslint src",
     "build": "webpack --display-error-details",
-    "start": "webpack-dev-server --config webpack.development.js --devtool source-map --progress --colors --hot --content-base build --host 0.0.0.0"
+    "start": "webpack-dev-server --config webpack.config.js --devtool source-map --progress --colors --hot --content-base build --host 0.0.0.0"
   },
   "devDependencies": {
     "babel": "*",
@@ -16,10 +16,13 @@
     "babel-loader": "*",
     "babel-plugin-transform-runtime": "*",
     "babel-polyfill": "*",
+    "copy-webpack-plugin": "^4.0.1",
     "eslint": "^0.24.1",
     "eslint-plugin-react": "^2.7.0",
+    "history": "^4.6.1",
     "html-webpack-plugin": "^2.28.0",
     "node-libs-browser": "^0.5.2",
+    "react-slick": "^0.14.8",
     "webpack": "^1.9.12",
     "webpack-dev-server": "^1.9.0"
   },
