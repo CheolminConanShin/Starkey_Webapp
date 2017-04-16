@@ -3,8 +3,8 @@ import Radium from 'radium';
 
 const defStyle = {
     navbar: {
-        backgroundColor: '#FFC8BB',
-        border: '1px solid #FFE1D3',
+        backgroundColor: '#F7F7F7',
+        borderBottom: '2px solid #A9A9A9',
         borderRadius: '0px',
         position: 'relative',
         top: '0px',
@@ -13,22 +13,11 @@ const defStyle = {
         boxSizing: 'border-box'
     },
     container: {
-        paddingRight: '15px',
-        paddingLeft: '15px',
+        padding: '10px',
         marginRight: 'auto',
         marginLeft: 'auto',
         boxSizing: 'border-box',
-        width: '80%',
-
-        // '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
-        //     width: '750px'
-        // },
-        // '@media (min-width: 992px)': {
-        //     width: '970px'
-        // },
-        // '@media (min-width: 1200px)': {
-        //     width: '1170px'
-        // }
+        width: '90%'
     },
     pseudoBefore: {
         display: 'table',

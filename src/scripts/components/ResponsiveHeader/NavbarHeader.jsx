@@ -1,6 +1,24 @@
 import React from 'react';
 import Radium from 'radium';
 
+const styles = {
+    imageStyle: {
+        width: '9vw',
+        height: '4vh',
+        '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+            height: '8vh'
+        },
+        float: 'left'
+    },
+    branch: {
+      fontSize: '1.5vw',
+      color: '#E8B500'
+    },
+    sameRow: {
+      display: 'inline-grid'
+    }
+}
+
 @Radium
 export default class NavbarHeader extends React.Component {
     displayName = 'Navigation bar header'
@@ -26,9 +44,11 @@ export default class NavbarHeader extends React.Component {
                 textDecoration: 'none',
                 backgroundColor: 'transparent',
                 boxSizing: 'border-box',
+                width: '50vw',
+                display: 'table',
 
                 fontSize: '40px',
-                color: '#6D6875',
+                color: '#1900C1',
 
                 ':hover': {
                     color: '#5e5e5e'
@@ -41,7 +61,8 @@ export default class NavbarHeader extends React.Component {
                 '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
                     fontSize: '20px',
                     lineHeight: '20px',
-                    marginLeft: '-15px'
+                    marginLeft: '-15px',
+                    width: '30vw'
                 }
             },
             navbarToggle: {
@@ -123,13 +144,15 @@ export default class NavbarHeader extends React.Component {
 
     render() {
         const defStyle = this.getStyles();
-        const {href, name, headerStyle, brandStyle} = this.props;
+        const {href, name, branch, headerStyle, brandStyle} = this.props;
         return (
             <div key="header" style={[defStyle.header, headerStyle && headerStyle]}>
                 <span style={[defStyle.pseudoBefore]} />
                     {this.renderToggleButton()}
+                    {/*<img style={styles.imageStyle} src='./image/StarkeyLogo.png'/>*/}
                     <a key="brand" style={[defStyle.brand, brandStyle && brandStyle]} href={href}>
-                        {name}
+                      <div style={styles.sameRow}>{name}</div>
+                      <div style={Object.assign({}, styles.branch, styles.sameRow)}>{branch}</div>
                     </a>
                 <span style={[defStyle.pseudoAfter]} />
             </div>
@@ -140,6 +163,7 @@ export default class NavbarHeader extends React.Component {
 NavbarHeader.propTypes = {
     href:        React.PropTypes.string,
     name:        React.PropTypes.string,
+    branch:      React.PropTypes.string,
     headerStyle: React.PropTypes.object,
     brandStyle:  React.PropTypes.object
 }

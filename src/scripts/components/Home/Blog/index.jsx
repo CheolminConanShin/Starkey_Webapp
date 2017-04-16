@@ -9,8 +9,6 @@ const content = {
   buttonUrl: 'http://blog.naver.com/starkeypaju'
 }
 
-
-
 export var HomeBlog = (
   Frame(content)
 )
