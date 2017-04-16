@@ -12,7 +12,8 @@ const styles = {
   },
   text: {
     textAlign: 'center',
-    fontSize: '2.7vw'
+    fontSize: '2.7vw',
+    paddingTop: '1vw'
   },
   description: {
     fontSize: '2vw'

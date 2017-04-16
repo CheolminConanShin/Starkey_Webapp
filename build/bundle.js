@@ -25379,7 +25379,7 @@
 
 	var _DropdownMenu2 = _interopRequireDefault(_DropdownMenu);
 
-	var navitems = [{ link: '/#about', title: '센터소개' }, { link: 'http://www.starkey.co.kr/product/product/bojung_custom.php', title: '제품' }, { link: 'http://blog.naver.com/starkeypaju', title: '블로그' }, { link: '/#contract', title: '문의/위치' }, { link: '/#question', title: 'FAQ' }];
+	var navitems = [{ link: '/#/about', title: '센터소개' }, { link: 'http://www.starkey.co.kr/product/product/bojung_custom.php', title: '제품' }, { link: 'http://blog.naver.com/starkeypaju', title: '블로그' }, { link: '/#/contract', title: '문의/위치' }, { link: '/#/question', title: 'FAQ' }];
 
 	var dropdownItems = [{ href: '#', name: 'ES2015' }, { href: '#', name: 'Setup' }, { href: '#', name: 'Usage' }, { href: '#', name: 'Advanced' }, { href: '#', name: 'Try it' }, { href: '#', name: 'FAQ' }];
 
@@ -26967,9 +26967,11 @@
 	                    position: 'relative',
 	                    display: 'block',
 	                    boxSizing: 'border-box',
+	                    marginTop: '10px',
 
 	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
-	                        float: 'left'
+	                        float: 'left',
+	                        marginTop: '0px'
 	                    }
 	                },
 	                link: {
@@ -27098,12 +27100,12 @@
 	                    float: 'left',
 	                    height: '50px',
 	                    padding: '15px',
-	                    lineHeight: '20px',
+	                    lineHeight: '40px',
 	                    textDecoration: 'none',
 	                    backgroundColor: 'transparent',
 	                    boxSizing: 'border-box',
 
-	                    fontSize: '23px',
+	                    fontSize: '40px',
 	                    color: '#6D6875',
 
 	                    ':hover': {
@@ -27116,6 +27118,7 @@
 
 	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
 	                        fontSize: '20px',
+	                        lineHeight: '20px',
 	                        marginLeft: '-15px'
 	                    }
 	                },
@@ -27161,8 +27164,8 @@
 	                },
 	                iconBar: {
 	                    display: 'block',
-	                    width: '30px',
-	                    height: '3px',
+	                    width: '40px',
+	                    height: '7px',
 	                    borderRadius: '1px',
 	                    backgroundColor: '#888',
 	                    boxSizing: 'border-box'
@@ -27289,12 +27292,13 @@
 	                    paddingLeft: '0',
 	                    boxSizing: 'border-box',
 
-	                    fontSize: '17px',
+	                    fontSize: '23px',
 	                    float: 'left',
 	                    margin: '0',
 	                    marginLeft: '50',
 
 	                    '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+	                        fontSize: '17px',
 	                        float: 'right',
 	                        marginLeft: '0'
 	                    }
@@ -27987,7 +27991,8 @@
 	  },
 	  text: {
 	    textAlign: 'center',
-	    fontSize: '2.7vw'
+	    fontSize: '2.7vw',
+	    paddingTop: '1vw'
 	  },
 	  description: {
 	    fontSize: '2vw'
