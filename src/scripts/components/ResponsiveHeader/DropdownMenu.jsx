@@ -22,7 +22,7 @@ const defStyle = {
         boxShadow: '0 6px 12px #C9C9C9',
         boxSizing: 'border-box',
 
-        '@media (max-width: 767px)': {
+        '@media screen and (min-device-width: 767px) and (min-width: 767px)': {
             position: 'static',
             float: 'none',
             width: 'auto',
@@ -53,7 +53,7 @@ const defStyle = {
             backgroundColor: '#f5f5f5'
         },
 
-        '@media (max-width: 767px)': {
+        '@@media screen and (min-device-width: 767px) and (min-width: 767px)': {
             backgroundColor: 'transparent',
             color: '#777',
 
