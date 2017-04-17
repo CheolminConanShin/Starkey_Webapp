@@ -14,7 +14,7 @@ const styles = {
     marginRight: '1vw'
   },
   companyName: {
-    color: '#879DFF',
+    color: '#317fb7',
     fontSize: '2vw',
     display: 'inline-grid',
     marginLeft: '1vw'

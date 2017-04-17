@@ -5,6 +5,7 @@ import {HomeAids} from './Aids'
 import {HomeBlog} from './Blog'
 import IconMenu from './IconMenu'
 import Location from './Location'
+import CenterPhoto from './CenterPhoto'
 
 import ImageSlider from './ImageSlider'
 
@@ -19,7 +20,10 @@ export default class Home extends React.Component {
       <div>
         <Section additionalStyle={ImageSliderStyle} title="Section1" content={ImageSlider}/>
         <IconMenu/>
-        <Location/>
+        <div>
+          <Location/>
+          <CenterPhoto/>
+        </div>
         {/*<Section additionalStyle={{height: "25vw"}} title="Section2" content={HomeAbout}/>*/}
       </div>
     )
