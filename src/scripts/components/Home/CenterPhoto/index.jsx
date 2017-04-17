@@ -20,7 +20,7 @@ const styles = {
 
 export default class CenterPhoto extends React.Component {
   render() {
-    const prephoto = Photo({imageUrl: './image/prephoto.png'})
+    const prephoto = Photo({imageUrl: './image/preview.png'})
     return (
       <div style={styles.container}>
         <div style={styles.text}>
