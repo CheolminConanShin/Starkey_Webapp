@@ -9,16 +9,18 @@ import CenterPhoto from './CenterPhoto'
 
 import ImageSlider from './ImageSlider'
 
-const ImageSliderStyle = {
-  height: '60vw',
-  maxHeight: '500px'
+const styles = {
+  imageSlider: {
+    height: '60vw',
+    maxHeight: '500px'
+  }
 }
 
 export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <Section additionalStyle={ImageSliderStyle} title="Section1" content={ImageSlider}/>
+        <Section additionalStyle={styles.imageSlider} title="Section1" content={ImageSlider}/>
         <IconMenu/>
         <div>
           <Location/>
