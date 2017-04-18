@@ -27839,9 +27839,11 @@
 
 	var _ImageSlider2 = _interopRequireDefault(_ImageSlider);
 
-	var ImageSliderStyle = {
-	  height: '60vw',
-	  maxHeight: '500px'
+	var styles = {
+	  imageSlider: {
+	    height: '60vw',
+	    maxHeight: '500px'
+	  }
 	};
 
 	var Home = (function (_React$Component) {
@@ -27859,7 +27861,7 @@
 	      return _react2['default'].createElement(
 	        'div',
 	        null,
-	        _react2['default'].createElement(_Section2['default'], { additionalStyle: ImageSliderStyle, title: 'Section1', content: _ImageSlider2['default'] }),
+	        _react2['default'].createElement(_Section2['default'], { additionalStyle: styles.imageSlider, title: 'Section1', content: _ImageSlider2['default'] }),
 	        _react2['default'].createElement(_IconMenu2['default'], null),
 	        _react2['default'].createElement(
 	          'div',
@@ -28477,7 +28479,7 @@
 	  _createClass(CenterPhoto, [{
 	    key: 'render',
 	    value: function render() {
-	      var prephoto = (0, _PhotoJsx2['default'])({ imageUrl: './image/prephoto.png' });
+	      var prephoto = (0, _PhotoJsx2['default'])({ imageUrl: './image/preview.png' });
 	      return _react2['default'].createElement(
 	        'div',
 	        { style: styles.container },

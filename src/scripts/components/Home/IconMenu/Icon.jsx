@@ -23,7 +23,7 @@ const styles = {
 const Icon = (content) => {
   return (
     <div style={styles.container}>
-      <a href="#">
+      <a href={content.url}>
         <img style={styles.inheritSize} src={content.imageUrl}/>
         <div style={styles.text}>
           {content.text}
