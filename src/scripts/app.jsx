@@ -4,6 +4,7 @@ import ResponsiveHeader from './components/ResponsiveHeader/'
 import Home from './components/Home'
 import About from './components/Home/About'
 import Aids from './components/Home/Aids'
+import CenterPhoto from './components/CenterPhoto'
 
 const Index = (
   <div>
@@ -12,8 +13,8 @@ const Index = (
       <div>
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={About}/>
-        <Route exact path="/contract#" component={About}/>
-        <Route exact path="/question#" component={About}/>
+        <Route exact path="/centerPhoto" component={CenterPhoto}/>
+        <Route exact path="/question" component={About}/>
       </div>
     </Router>
   </div>
