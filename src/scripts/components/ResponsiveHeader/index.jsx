@@ -8,7 +8,7 @@ import DropdownMenu from './DropdownMenu';
 
 const navitems = [
     {link: '/#/about', title: '센터소개'},
-    {link: '/#/product', title: '제품'},
+    {link: '/#/product', title: '제품소개'},
     {link: 'http://blog.naver.com/starkeypaju', title: '블로그'},
     {link: '/#/contract', title: '연락처/위치'},
     {link: '/#/question', title: 'FAQ'}
