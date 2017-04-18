@@ -1,5 +1,6 @@
 import React from 'react'
 import Photo from './Photo.jsx'
+// import ImageViewer from 'react-image-viewer'
 
 const styles = {
   container: {
@@ -18,7 +19,7 @@ const styles = {
   }
 }
 
-export default class CenterPhoto extends React.Component {
+export class PreviewPhoto extends React.Component {
   render() {
     const prephoto = Photo({imageUrl: './image/preview.png'})
     return (
@@ -28,6 +29,14 @@ export default class CenterPhoto extends React.Component {
         </div>
         {prephoto}
       </div>
+    )
+  }
+}
+
+export default class CenterPhoto extends React.Component {
+  render() {
+    return(
+      <div>CenterPhoto</div>
     )
   }
 }
