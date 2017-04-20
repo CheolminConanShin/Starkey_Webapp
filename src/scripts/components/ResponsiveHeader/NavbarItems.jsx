@@ -1,11 +1,10 @@
 import React from 'react';
 import Radium from 'radium';
 
-@Radium
-export default class NavbarItems extends React.Component {
-    displayName = 'Navigation list of items'
+class NavbarItems extends React.Component {
+    displayName : 'Navigation list of items'
 
-    getStyles = () => {
+    getStyles() {
         let styles = {
             base: {
                 margin: '7.5px -15px',
@@ -73,13 +72,13 @@ export default class NavbarItems extends React.Component {
         return styles;
     }
 
-    onClickHandler = (activeIndex) => {
+    onClickHandler(activeIndex) {
         this.setState({
             activeIndex: activeIndex
         });
     }
 
-    renderChildren = () => {
+    renderChildren() {
         const {children} = this.props;
         const {activeIndex} = this.state;
         return React.Children.map(children, (child, index) => {
@@ -110,7 +109,4 @@ export default class NavbarItems extends React.Component {
     }
 }
 
-NavbarItems.propTypes = {
-    style: React.PropTypes.object,
-    children: React.PropTypes.node
-}
+export default Radium(NavbarItems)

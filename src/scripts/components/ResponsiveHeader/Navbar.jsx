@@ -32,9 +32,8 @@ const defStyle = {
     }
 };
 
-@Radium
-export default class Navbar extends React.Component {
-    displayName = 'Navigation bar'
+class Navbar extends React.Component {
+    displayName: 'Navigation bar'
 
     constructor(props) {
       super(props)
@@ -77,9 +76,4 @@ export default class Navbar extends React.Component {
         );
     }
 }
-
-Navbar.propTypes = {
-    navStyle:  React.PropTypes.object,
-    contStyle: React.PropTypes.object,
-    children:  React.PropTypes.node
-}
+export default Radium(Navbar)

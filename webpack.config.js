@@ -12,7 +12,7 @@ const CopyWebpackPluginConfig = new CopyWebpackPlugin([{
 }]);
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/App.jsx'),
+  entry: [path.resolve(__dirname, 'src/App.jsx')],
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
@@ -21,7 +21,7 @@ module.exports = {
   module: {
     loaders: [
       {
-        loader: "babel?stage=0",
+        loader: "babel-loader",
         include: [
           path.resolve(__dirname, "src"),
         ],
@@ -30,7 +30,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [ '', '.js', '.jsx' ]
+    extensions: ['.js', '.jsx' ]
   },
   devServer: {
       publicPath: "/",

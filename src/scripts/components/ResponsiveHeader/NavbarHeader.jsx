@@ -19,11 +19,10 @@ const styles = {
     }
 }
 
-@Radium
-export default class NavbarHeader extends React.Component {
-    displayName = 'Navigation bar header'
+class NavbarHeader extends React.Component {
+    displayName : 'Navigation bar header'
 
-    getStyles = () => {
+    getStyles() {
         return {
             header: {
                 marginRight: '-15px',
@@ -130,7 +129,7 @@ export default class NavbarHeader extends React.Component {
         };
     }
 
-    renderToggleButton = () => {
+    renderToggleButton() {
         const defStyle = this.getStyles();
         return (
           <button type="button" style={[defStyle.navbarToggle]} onClick= {this.props.navbarToggle}>
@@ -160,10 +159,4 @@ export default class NavbarHeader extends React.Component {
     }
 }
 
-NavbarHeader.propTypes = {
-    href:        React.PropTypes.string,
-    name:        React.PropTypes.string,
-    branch:      React.PropTypes.string,
-    headerStyle: React.PropTypes.object,
-    brandStyle:  React.PropTypes.object
-}
+export default Radium(NavbarHeader)

@@ -1,15 +1,14 @@
 import React from 'react';
 import Radium from 'radium';
 
-@Radium
-export default class NavbarDropdown extends React.Component {
-    displayName = 'Navigation bar dropdown button'
+class NavbarDropdown extends React.Component {
+    displayName: 'Navigation bar dropdown button'
 
-    state = {
+    state: {
         open: false
     }
 
-    getStyles = () => {
+    getStyles() {
         let styles = {
             dropdown: {
               position: 'relative',
@@ -63,7 +62,7 @@ export default class NavbarDropdown extends React.Component {
         return styles;
     }
 
-    renderChildren = () => {
+    renderChildren() {
         const {children, index, activeIndex} = this.props;
         let active = false;
         // this particular dropdown is clicked
@@ -80,7 +79,7 @@ export default class NavbarDropdown extends React.Component {
         return newChildren;
     }
 
-    handleDocumentClick = () => {
+    handleDocumentClick() {
         if (this.state.open) {
             this.setState({open: false});
           // when all the dropdowns are closed, activeIndex is set to -1
@@ -88,7 +87,7 @@ export default class NavbarDropdown extends React.Component {
         }
     }
 
-    handleDropdownClick = (e) => {
+    handleDropdownClick(e) {
         const {index, parentCallBack} = this.props;
         e.preventDefault();
         e.nativeEvent.stopImmediatePropagation();
@@ -134,11 +133,4 @@ export default class NavbarDropdown extends React.Component {
     }
 }
 
-NavbarDropdown.propTypes = {
-    name: React.PropTypes.string,
-    style: React.PropTypes.object,
-    itemStyle: React.PropTypes.object,
-    index: React.PropTypes.number,
-    activeIndex: React.PropTypes.number,
-    parentCallBack: React.PropTypes.func
-}
+export default Radium(NavbarDropdown)

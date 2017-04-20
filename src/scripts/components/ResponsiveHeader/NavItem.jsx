@@ -1,11 +1,10 @@
 import React from 'react';
 import Radium from 'radium';
 
-@Radium
-export default class NavItem extends React.Component {
-    displayName = 'Navigation bar item'
+class NavItem extends React.Component {
+    displayName : 'Navigation bar item'
 
-    getStyles = () => {
+    getStyles() {
         return {
             base: {
                 position: 'relative',
@@ -60,9 +59,4 @@ export default class NavItem extends React.Component {
     }
 }
 
-NavItem.propTypes = {
-    link:  React.PropTypes.string,
-    title: React.PropTypes.string,
-    style: React.PropTypes.object,
-    itemStyle: React.PropTypes.object
-}
+export default Radium(NavItem)

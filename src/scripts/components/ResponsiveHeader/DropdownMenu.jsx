@@ -65,9 +65,8 @@ const defStyle = {
     }
 }
 
-@Radium
-export default class DropdownMenu extends React.Component {
-    displayName = 'Dropdown menu items'
+class DropdownMenu extends React.Component {
+    displayName: 'Dropdown menu items'
 
     render() {
         const {open, active} = this.props;
@@ -93,9 +92,4 @@ export default class DropdownMenu extends React.Component {
     }
 }
 
-DropdownMenu.propTypes = {
-    menuItems: React.PropTypes.array,
-    style: React.PropTypes.object,
-    menuItemStyle: React.PropTypes.object,
-    open: React.PropTypes.bool
-}
+export default Radium(DropdownMenu)
