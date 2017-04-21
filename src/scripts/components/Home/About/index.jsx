@@ -17,6 +17,12 @@ const styles = {
     container: {
       fontFamily: 'NanumGothic'
     },
+    containerCenter: {
+      backgroundColor: '#FAF9F4'
+    },
+    containerCEO: {
+      backgroundColor: '#F4F4F4'
+    },
     imageCenter: {
       width: '55vw',
       height: '30vw',
@@ -32,13 +38,13 @@ const styles = {
       width: '55vw',
       padding: '2vw',
       textAlign: 'center',
-      display: 'inline-table'
+      float: 'left'
     },
     linkCEO: {
       width: '43vw',
       padding: '2vw',
       textAlign: 'center',
-      display: 'inline-table'
+      float: 'right'
     },
     title: {
       fontSize: '3.5vw',
@@ -67,7 +73,7 @@ const styles = {
 }
 
 const centerContent = (
-  <div style={styles.container}>
+  <div style={Object.assign({}, styles.container, styles.containerCenter)}>
     <div style={styles.description}>
       <p style={styles.title}>센터 인사말</p>
       <p>파주 스타키 보청기는 고객님들께 최고 품질의 보청기를</p>
@@ -84,7 +90,7 @@ const centerContent = (
 )
 
 const ceoContent = (
-  <div style={styles.container}>
+  <div style={Object.assign({}, styles.container, styles.containerCEO)}>
     <div style={styles.ceoDescription}>
       <p style={styles.title}>원장 인사말</p>
       <p>난청으로 인하여 고생하시는 분들이 많음을 알게된 후,</p>
@@ -137,7 +143,7 @@ export default class AboutPage extends React.Component {
           <a onClick={this.changeContentCEO}><img style={styles.imageCEO} src='./image/about.png' /></a>
         </div>
         <div>
-          <a  onClick={this.changeContentCenter} style={styles.linkCenter}>센터인사말 보기</a> <a  onClick={this.changeContentCEO} style={styles.linkCEO}>원장인사말 보기</a>
+          <a  onClick={this.changeContentCenter} style={Object.assign({}, styles.containerCenter, styles.linkCenter)}>센터인사말 보기</a> <a  onClick={this.changeContentCEO} style={Object.assign({}, styles.containerCEO, styles.linkCEO)}>원장인사말 보기</a>
         </div>
         {this.state.content}
       </div>

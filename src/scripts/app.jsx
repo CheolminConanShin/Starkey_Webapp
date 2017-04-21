@@ -9,7 +9,7 @@ import LocationPage from './components/Home/Location'
 const Index = (
   <div>
     <ResponsiveHeader/>
-    <Router history={history}>
+    <Router>
       <div>
         <Route exact path="/" component={Home}/>
         <Route exact path="/event" component={EventPage}/>
