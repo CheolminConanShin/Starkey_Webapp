@@ -4,7 +4,7 @@ import ResponsiveHeader from './components/ResponsiveHeader/'
 import Home from './components/Home'
 import About from './components/Home/About'
 import Aids from './components/Home/Aids'
-import CenterPhoto from './components/CenterPhoto'
+import CenterPhoto from './components/Home/CenterPhoto'
 
 const Index = (
   <div>

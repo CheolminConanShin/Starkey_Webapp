@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from './Icon'
+import {Icon, CameraIcon} from './Icon'
 
 const styles = {
   container: {
@@ -27,10 +27,15 @@ const styles = {
 }
 
 export default class IconMenu extends React.Component {
+  constructor(props) {
+    super(props)
+    this.showGallery = this.props.showGallery
+  }
+
   render() {
     const eventIcon = Icon({imageUrl: './icon/event.png', text: '공지사항', url: '#'})
     const introIcon = Icon({imageUrl: './icon/center.png', text: '센터소개', url: '/#/about'})
-    const centerIcon = Icon({imageUrl: './icon/camera.png', text: '센터미리보기', url: '/#/centerPhoto'})
+    const centerIcon = CameraIcon({imageUrl: './icon/camera.png', text: '센터미리보기', clickEvent: this.showGallery})
     const hearingAidIcon = Icon({imageUrl: './icon/hearingaid.png', text: '제품소개', url: '#'})
     const blogIcon = Icon({imageUrl: './icon/blog.png', text: '블로그', url: 'http://blog.naver.com/starkeypaju'})
     const mapIcon = Icon({imageUrl: './icon/map.png', text: '연락처/위치', url: '#'})

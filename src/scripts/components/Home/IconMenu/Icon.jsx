@@ -1,4 +1,5 @@
 import React from 'react'
+import CenterPhoto from '../CenterPhoto'
 
 const styles = {
   container: {
@@ -20,7 +21,20 @@ const styles = {
   }
 }
 
-const Icon = (content) => {
+export const CameraIcon = (content) => {
+  return (
+    <div style={styles.container}>
+      <a onClick={content.clickEvent}>
+        <img style={styles.inheritSize} src={content.imageUrl}/>
+        <div style={styles.text}>
+          {content.text}
+        </div>
+      </a>
+    </div>
+  )
+}
+
+export const Icon = (content) => {
   return (
     <div style={styles.container}>
       <a href={content.url}>
@@ -32,5 +46,3 @@ const Icon = (content) => {
     </div>
   )
 }
-
-export default Icon
