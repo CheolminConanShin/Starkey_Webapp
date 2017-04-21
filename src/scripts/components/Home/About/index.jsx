@@ -107,7 +107,7 @@ const ceoContent = (
   </div>
 )
 
-export default class About extends React.Component {
+export default class AboutPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {

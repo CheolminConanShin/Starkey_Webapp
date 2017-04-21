@@ -4,7 +4,7 @@ import {HomeAbout} from './About'
 import {HomeAids} from './Aids'
 import {HomeBlog} from './Blog'
 import IconMenu from './IconMenu'
-import Location from './Location'
+import {Location} from './Location'
 import {PreviewPhoto} from './CenterPhoto'
 import Gallery from './CenterPhoto/Gallery.jsx'
 

@@ -27,11 +27,11 @@ const styles = {
   }
 }
 
-export default class Location extends React.Component {
+export class Location extends React.Component {
   render() {
     return (
       <div style={styles.container}>
-        <img style={styles.image} src='./image/map.png'/>
+        <img style={styles.image} src='./image/map.jpg'/>
         <div style={styles.text}>
           <img style={styles.icon} src='./icon/phone.png'/>
           <a href="tel:031-947-9279">031-947-9279</a>
@@ -39,6 +39,66 @@ export default class Location extends React.Component {
         <div style={styles.text}>
           <img style={styles.icon} src='./icon/cellphone.png'/>
           <a href="tel:010-2111-3769">010-2111-3769</a>
+        </div>
+      </div>
+    )
+  }
+}
+
+const pageStyle = {
+  container: {
+    color: '#130E32'
+  },
+  header: {
+    width: '100%',
+    fontSize: '4vw',
+    padding: '2vw',
+    textAlign: 'center',
+    display: 'inline-grid',
+    backgroundColor: '#FAF9F4'
+  },
+  leftSide: {
+    padding: '3vw',
+    width: '35vw',
+    float: 'left'
+  },
+  centerText: {
+    fontSize: '2.5vw'
+  },
+  centerTextEnglish: {
+    fontSize: '1.7vw',
+    marginBottom: '4vw'
+  },
+  sectionHeader: {
+    fontSize: '1.7vw',
+    lineHeight: '5vw'
+  },
+  rightSide: {
+    width: '65vw',
+    float: 'right'
+  },
+  image: {
+    width: 'inherit'
+  }
+}
+
+export default class LocationPage extends React.Component {
+  render() {
+    return(
+      <div style={pageStyle.container}>
+        <h style={pageStyle.header}>오시는 길</h>
+        <div style={pageStyle.leftSide}>
+          <p style={pageStyle.centerText}>스타키보청기 파주점</p>
+          <p style={pageStyle.centerTextEnglish}>Starkey Paju Center</p>
+          <h style={pageStyle.sectionHeader}>주소</h>
+          <p>경기도 파주시 중앙로 189</p>
+          <p>파워프라자 202호</p>
+          <h style={pageStyle.sectionHeader}>전화번호</h>
+          <p><a href="tel:031-947-9279">031-947-9279</a></p>
+          <p><a href="tel:010-2111-3769">010-2111-3769</a></p>
+        </div>
+        <div style={pageStyle.rightSide}>
+          <img style={pageStyle.image} src='./image/location.jpg'/>
         </div>
       </div>
     )
