@@ -1,13 +1,10 @@
 import React from 'react'
 import Section from './Section'
-import {HomeAbout} from './About'
-import {HomeAids} from './Aids'
-import {HomeBlog} from './Blog'
+// import {HomeAbout} from './About'
 import IconMenu from './IconMenu'
 import {Location} from './Location'
 import {PreviewPhoto} from './CenterPhoto'
 import Gallery from './CenterPhoto/Gallery.jsx'
-
 import ImageSlider from './ImageSlider'
 
 const styles = {
