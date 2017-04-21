@@ -7,11 +7,11 @@ import NavbarDropdown from './NavbarDropdown';
 import DropdownMenu from './DropdownMenu';
 
 const navitems = [
+    {link: '/#/', title: '홈'},
     {link: '/#/about', title: '센터소개'},
     {link: '/#/product', title: '제품소개'},
-    {link: 'http://blog.naver.com/starkeypaju', title: '블로그'},
     {link: '/#/location', title: '연락처/위치'},
-    {link: '/#/question', title: 'FAQ'}
+    // {link: '/#/board', title: 'FAQ'}
 ];
 
 const dropdownItems = [

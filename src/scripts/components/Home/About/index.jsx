@@ -37,12 +37,14 @@ const styles = {
     linkCenter: {
       width: '55vw',
       padding: '2vw',
+      fontSize: '2vw',
       textAlign: 'center',
       float: 'left'
     },
     linkCEO: {
       width: '43vw',
       padding: '2vw',
+      fontSize: '2vw',
       textAlign: 'center',
       float: 'right'
     },
@@ -55,13 +57,13 @@ const styles = {
       fontSize: '3vw',
       color: '#130E32',
       marginLeft: '7vw',
-      marginTop: '5vw'
+      marginTop: '8vw'
     },
     ceoDescription: {
       fontSize: '2.5vw',
       color: '#130E32',
       marginLeft: '7vw',
-      marginTop: '5vw'
+      marginTop: '8vw'
     },
     ceoHistory: {
       fontSize: '2vw',
