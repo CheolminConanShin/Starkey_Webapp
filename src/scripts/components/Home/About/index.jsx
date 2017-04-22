@@ -1,5 +1,6 @@
 import React from 'react'
 import Frame from '../Frame'
+import TitleHeader from '../../TitleHeader'
 
 const content = {
   image: './image/About.png',
@@ -140,6 +141,7 @@ export default class AboutPage extends React.Component {
   render() {
     return (
       <div>
+        <TitleHeader text='우리센터를 소개합니다'/>
         <div>
           <a onClick={this.changeContentCenter}><img style={styles.imageCenter} src='./image/aboutHead.jpg' /></a>
           <a onClick={this.changeContentCEO}><img style={styles.imageCEO} src='./image/about.png' /></a>

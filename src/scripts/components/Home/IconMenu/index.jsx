@@ -10,13 +10,13 @@ const styles = {
   quickMenu: {
     color: '#E7E7E7',
     fontSize: '2.5vw',
-    display: 'inline-grid',
+    display: 'inline-block',
     marginRight: '1vw'
   },
   companyName: {
     color: '#317fb7',
     fontSize: '2vw',
-    display: 'inline-grid',
+    display: 'inline-block',
     marginLeft: '1vw'
   },
   icons: {

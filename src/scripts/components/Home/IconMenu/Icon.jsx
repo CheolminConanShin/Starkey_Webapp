@@ -6,7 +6,7 @@ const styles = {
     width: '14vw',
     height: '11vw',
     textAlign: 'center',
-    display: 'inline-grid',
+    display: 'inline-block',
     paddingBottom: '1vw'
   },
   text: {

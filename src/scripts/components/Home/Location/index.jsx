@@ -1,4 +1,5 @@
 import React from 'react'
+import TitleHeader from '../../TitleHeader'
 
 const styles = {
   container: {
@@ -46,21 +47,11 @@ export class Location extends React.Component {
 }
 
 const pageStyle = {
-  container: {
-    color: '#130E32'
-  },
-  header: {
-    width: '100%',
-    fontSize: '4vw',
-    padding: '2vw',
-    textAlign: 'center',
-    display: 'inline-grid',
-    backgroundColor: '#FAF9F4'
-  },
   leftSide: {
     padding: '3vw',
     width: '35vw',
-    float: 'left'
+    float: 'left',
+    color: '#130E32'
   },
   centerText: {
     fontSize: '2.5vw'
@@ -85,8 +76,8 @@ const pageStyle = {
 export default class LocationPage extends React.Component {
   render() {
     return(
-      <div style={pageStyle.container}>
-        <h style={pageStyle.header}>오시는 길</h>
+      <div>
+        <TitleHeader text='오시는 길'/>
         <div style={pageStyle.leftSide}>
           <p style={pageStyle.centerText}>스타키보청기 파주점</p>
           <p style={pageStyle.centerTextEnglish}>Starkey Paju Center</p>

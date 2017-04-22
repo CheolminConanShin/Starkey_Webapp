@@ -1,22 +1,13 @@
 import React from 'react'
-import {HashRouter as Router, Route} from "react-router-dom";
+import {HashRouter as Router, Route} from "react-router-dom"
+import TitleHeader from '../TitleHeader'
 
 const pageStyle = {
-  container: {
-    color: '#130E32'
-  },
-  header: {
-    width: '100%',
-    fontSize: '4vw',
-    padding: '2vw',
-    textAlign: 'center',
-    display: 'inline-grid',
-    backgroundColor: '#FAF9F4'
-  },
   leftSide: {
     padding: '3vw',
     width: '35vw',
-    float: 'left'
+    float: 'left',
+    color: '#130E32'
   },
   rightSide: {
     width: '65vw',
@@ -57,15 +48,15 @@ export default class EventPage extends React.Component {
 
   render() {
     return(
-      <div style={pageStyle.container}>
-        <h style={pageStyle.header}>이벤트 및 공지사항</h>
-          <div style={pageStyle.leftSide}>
-            <li style={pageStyle.link} value={eventA} onClick={() => this.changeImage(eventA)}>{eventA.title}</li>
-            <li style={pageStyle.link} value={eventB} onClick={() => this.changeImage(eventB)}>{eventB.title}</li>
-          </div>
-          <div style={pageStyle.rightSide}>
-            <img style={pageStyle.image} src={this.state.imageUrl}></img>
-          </div>
+      <div>
+        <TitleHeader text='이벤트 및 공지사항'/>
+        <div style={pageStyle.leftSide}>
+          <li style={pageStyle.link} value={eventA} onClick={() => this.changeImage(eventA)}>{eventA.title}</li>
+          <li style={pageStyle.link} value={eventB} onClick={() => this.changeImage(eventB)}>{eventB.title}</li>
+        </div>
+        <div style={pageStyle.rightSide}>
+          <img style={pageStyle.image} src={this.state.imageUrl}></img>
+        </div>
       </div>
     )
   }

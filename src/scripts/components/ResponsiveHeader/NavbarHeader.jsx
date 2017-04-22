@@ -2,14 +2,6 @@ import React from 'react';
 import Radium from 'radium';
 
 const styles = {
-    imageStyle: {
-        width: '9vw',
-        height: '4vh',
-        '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
-            height: '8vh'
-        },
-        float: 'left'
-    },
     branch: {
       fontSize: '1.5vw',
       color: '#E8B500'
@@ -148,7 +140,6 @@ class NavbarHeader extends React.Component {
             <div key="header" style={[defStyle.header, headerStyle && headerStyle]}>
                 <span style={[defStyle.pseudoBefore]} />
                     {this.renderToggleButton()}
-                    {/*<img style={styles.imageStyle} src='./image/StarkeyLogo.png'/>*/}
                     <a key="brand" style={[defStyle.brand, brandStyle && brandStyle]} href={href}>
                       <div style={styles.sameRow}>{name}</div>
                       <div style={Object.assign({}, styles.branch, styles.sameRow)}>{branch}</div>
