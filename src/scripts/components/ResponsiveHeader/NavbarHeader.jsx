@@ -31,14 +31,14 @@ class NavbarHeader extends React.Component {
                 float: 'left',
                 height: '50px',
                 padding: '15px',
-                lineHeight: '40px',
                 textDecoration: 'none',
                 backgroundColor: 'transparent',
                 boxSizing: 'border-box',
                 width: '50vw',
                 display: 'table',
 
-                fontSize: '40px',
+                fontSize: '30px',
+                lineHeight: '30px',
                 color: '#1900C1',
 
                 ':hover': {
@@ -50,8 +50,6 @@ class NavbarHeader extends React.Component {
                 },
 
                 '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
-                    fontSize: '20px',
-                    lineHeight: '20px',
                     marginLeft: '-15px',
                     width: '30vw'
                 }
