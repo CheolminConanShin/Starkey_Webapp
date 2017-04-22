@@ -2,8 +2,8 @@ import React from 'react'
 
 const styles = {
   image: {
-    width: '67.5vw',
-    height: '22vw'
+    width: 'inherit',
+    height: '21vw'
   }
 }
 

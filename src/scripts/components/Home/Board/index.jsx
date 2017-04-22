@@ -9,7 +9,7 @@ const pageStyle = {
     fontSize: '4vw',
     padding: '2vw',
     textAlign: 'center',
-    display: 'inline-grid',
+    display: 'inline-block',
     backgroundColor: '#FAF9F4'
   }
 }

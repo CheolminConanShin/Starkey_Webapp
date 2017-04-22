@@ -9,7 +9,7 @@ const header = {
     fontSize: '3vw',
     padding: '1vw',
     textAlign: 'center',
-    display: 'inline-grid',
+    display: 'inline-block',
     backgroundColor: '#FAF9F4'
   }
 }

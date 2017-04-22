@@ -3,14 +3,14 @@ import TitleHeader from '../../TitleHeader'
 
 const styles = {
   container: {
-    margin: '10px',
+    margin: '1vw',
     textAlign: 'center',
     width: '28vw',
     height: '27vw',
     backgroundColor: '#FAF9F4',
     border: '2px solid #E4E3DE',
     color: '#130E32',
-    display: 'inline-grid',
+    display: 'inline-block',
     fontSize: '2vw',
     float: 'left'
   },

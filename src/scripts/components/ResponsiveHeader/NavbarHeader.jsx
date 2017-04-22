@@ -7,7 +7,7 @@ const styles = {
       color: '#E8B500'
     },
     sameRow: {
-      display: 'inline-grid'
+      display: 'inline-block'
     }
 }
 

@@ -5,13 +5,14 @@ import Lightbox from 'react-images'
 
 const styles = {
   container: {
-    margin: '10px',
+    margin: '1vw',
     textAlign: 'center',
-
+    width: '68vw',
+    height: '27vw',
     backgroundColor: '#FAF9F4',
     border: '2px solid #E4E3DE',
-    display: 'inline-grid',
-    float: 'left'
+    display: 'inline-block',
+    float: 'right'
   },
   text: {
     fontSize: '2vw',
