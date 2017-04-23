@@ -39,7 +39,7 @@ export default class IconMenu extends React.Component {
     const hearingAidIcon = Icon({imageUrl: './icon/hearingaid.png', text: '제품소개', url: '/#/product'})
     const blogIcon = Icon({imageUrl: './icon/blog.png', text: '블로그', url: 'http://blog.naver.com/starkeypaju'})
     const mapIcon = Icon({imageUrl: './icon/map.png', text: '연락처/위치', url: '/#/location'})
-    // const storyIcon = Icon({imageUrl: './icon/story.png', text: '사용자후기', url: '/#/board'})
+    const storyIcon = Icon({imageUrl: './icon/story.png', text: '질문하기', url: '/#/board'})
     return (
       <div>
         <div style={styles.container}>
@@ -53,7 +53,7 @@ export default class IconMenu extends React.Component {
           {hearingAidIcon}
           {blogIcon}
           {mapIcon}
-          {/*{storyIcon}*/}
+          {storyIcon}
         </div>
       </div>
     )

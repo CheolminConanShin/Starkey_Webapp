@@ -11,7 +11,7 @@ const navitems = [
     {link: '/#/about', title: '센터소개'},
     {link: '/#/product', title: '제품소개'},
     {link: '/#/location', title: '연락처/위치'},
-    // {link: '/#/board', title: 'FAQ'}
+    // {link: '/board', title: 'FAQ'}
 ];
 
 const dropdownItems = [
