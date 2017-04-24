@@ -28,7 +28,8 @@ class PostEditor extends Component {
     this.state = {
       content: '',
       name: '',
-      password: ''
+      password: '',
+      replyMessage: ''
     };
 
     this.handlePostEditorNameChange = this.handlePostEditorNameChange.bind(this)
@@ -60,7 +61,8 @@ class PostEditor extends Component {
     this.setState({
       content: '',
       name: '',
-      passowrd: ''
+      passowrd: '',
+      replyMessage: ''
     });
   }
 

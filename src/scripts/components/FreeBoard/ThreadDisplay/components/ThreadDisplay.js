@@ -24,7 +24,6 @@ class ThreadDisplay extends Component {
   }
 
   addPost(postBody) {
-    // const postToSave = {postBody};
     this.databaseRef.push().set(postBody);
   }
 
@@ -36,7 +35,7 @@ class ThreadDisplay extends Component {
       hiddenPassword: responseValue.password,
       content: responseValue.name + '님께서 문의하신 내용입니다. 비밀번호를 입력해주세요.'
     }
-    // const brokenDownPost = response.postBody.newPostBody.split(/[\r\n]/g);
+
     posts.unshift(singlePost);
     this.setState({
       posts: posts,
@@ -49,7 +48,7 @@ class ThreadDisplay extends Component {
         <PostEditor addPost={this.addPost}/>
         {
           this.state.posts.map((post) => {
-            return(<Post key={post.key} singlePost={post}/>)
+            return(<Post key={post.key} database={this.props.database} singlePost={post}/>)
           })
         }
       </div>

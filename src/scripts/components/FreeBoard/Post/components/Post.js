@@ -18,17 +18,26 @@ var styles = {
   },
   passwordForm: {
     marginLeft: '1em'
+  },
+  replyButton: {
+    float: "right",
+    marginTop: "1em"
   }
 }
 
 export default class Post extends React.Component {
   constructor(props) {
       super(props)
+      console.log(this.props.singlePost.key)
+      this.database = this.props.database.ref().child('post').child(this.props.singlePost.key)
       this.state = {
         password: '',
         content: this.props.singlePost.content,
-        show: true
+        showPasswordForm: true,
+        admin: false
       }
+      this.handleReply = this.handleReply.bind(this)
+      this.replyFormChange = this.replyFormChange.bind(this)
       this.handlePostEditorPasswordChange = this.handlePostEditorPasswordChange.bind(this)
       this.checkButtonClick = this.checkButtonClick.bind(this)
   }
@@ -37,12 +46,14 @@ export default class Post extends React.Component {
     if(this.state.password == this.props.singlePost.hiddenPassword){
       this.setState({
         content: this.props.singlePost.hiddenContent,
-        show: false
+        showPasswordForm: false,
+        admin: false
       })
-    } else if(this.state.password == 'wjdvlfghk') {
+    } else if(this.state.password == 'gncs0191') {
       this.setState({
         content: this.props.singlePost.hiddenContent,
-        show: false
+        showPasswordForm: false,
+        admin: true
       })
     } else {
       alert("비밀번호가 틀렸습니다")
@@ -58,17 +69,45 @@ export default class Post extends React.Component {
     })
   }
 
+  handleReply() {
+    const replyMessage = this.state.replyMessage
+    this.database.child('replyMessage').set(replyMessage)
+  }
+
+  replyFormChange(ev) {
+    this.setState({
+      replyMessage: ev.target.value
+    })
+  }
+
   render() {
     return (
       <div className="panel panel-default" style={styles.postBody}>
         <div className="panel-body">
             <div style={styles.content} key={this.props.singlePost.key}>
               {this.state.content}
-              {this.state.show ? <input className='well-sm' style={Object.assign({}, styles.inputForm, styles.passwordForm)} value={this.state.password} placeholder="비밀번호" onChange={this.handlePostEditorPasswordChange}></input> : null}
-              {this.state.show ? <button style={styles.checkButton} onClick={this.checkButtonClick} className="btn btn-success">답변확인</button> : null}
+              {this.state.showPasswordForm ? <input className='well-sm' style={Object.assign({}, styles.inputForm, styles.passwordForm)} value={this.state.password} placeholder="비밀번호" onChange={this.handlePostEditorPasswordChange}></input> : null}
+              {this.state.showPasswordForm ? <button style={styles.checkButton} onClick={this.checkButtonClick} className="btn btn-success">답변확인</button> : null}
+              {this.state.showPasswordForm ? null : <div className='well'>{this.state.replyMessage ? this.state.replyMessage : '답변을 준비 중 입니다.'}</div>}
             </div>
+            {this.state.admin ?
+              <div>
+                <textarea className="form-control" value={this.state.replyMessage} onChange={this.replyFormChange}/>
+                <button className="btn btn-primary" style={styles.replyButton} onClick={this.handleReply}>답변하기</button>
+              </div> :
+              null
+            }
         </div>
       </div>
     )
+  }
+
+  componentDidMount() {
+    var me = this
+    this.database.child('replyMessage').once('value', function(snapshot) {
+      me.setState({
+        replyMessage: snapshot.val()
+      })
+    })
   }
 }
