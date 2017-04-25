@@ -28,7 +28,6 @@ var styles = {
 export default class Post extends React.Component {
   constructor(props) {
       super(props)
-      console.log(this.props.singlePost.key)
       this.database = this.props.database.ref().child('post').child(this.props.singlePost.key)
       this.state = {
         password: '',
@@ -72,6 +71,12 @@ export default class Post extends React.Component {
   handleReply() {
     const replyMessage = this.state.replyMessage
     this.database.child('replyMessage').set(replyMessage)
+    this.setState({
+      password: '',
+      content: this.props.singlePost.content,
+      showPasswordForm: true,
+      admin: false
+    })
   }
 
   replyFormChange(ev) {

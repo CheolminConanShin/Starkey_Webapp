@@ -1,5 +1,6 @@
 import React from 'react'
 import ThreadDisplay from './ThreadDisplay/components/ThreadDisplay';
+import TitleHeader from '../TitleHeader'
 import firebase from 'firebase/app';
 import 'firebase/database';
 global.jQuery = require('jquery');
@@ -19,7 +20,10 @@ export default class FreeBoard extends React.Component {
 
   render() {
     return (
-      <ThreadDisplay database={this.database} />
+      <div>
+        <TitleHeader text='무엇이든 물어보세요'/>
+        <ThreadDisplay database={this.database} />
+      </div>
     );
   }
 }
