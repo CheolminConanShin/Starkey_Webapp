@@ -8,10 +8,11 @@ import DropdownMenu from './DropdownMenu';
 
 const navitems = [
     {link: '/#/', title: '홈'},
-    {link: '/#/about', title: '센터소개'},
     {link: '/#/product', title: '제품소개'},
-    {link: '/#/location', title: '연락처/위치'},
-    // {link: '/board', title: 'FAQ'}
+    {link: '/#/about', title: '센터소개'},
+    {link: '/board', title: '문의하기'},
+    // {link: '/#/location', title: '연락처/위치'},
+    {link: 'http://blog.naver.com/starkeypaju', title: '블로그보기'}
 ];
 
 const dropdownItems = [
@@ -32,7 +33,7 @@ export default class ResponsiveHeader extends React.Component {
               {navitems.map(item => {
                   return <NavItem key={navitems.indexOf(item)} link={item.link} title={item.title} />;
               })}
-              {/*}<NavbarDropdown name="Dropdown">
+              {/*<NavbarDropdown name="Dropdown">
                   <DropdownMenu menuItems={dropdownItems}/>
               </NavbarDropdown>
               <NavbarDropdown name="Dropdown">

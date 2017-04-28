@@ -7,6 +7,7 @@ class NavItem extends React.Component {
     getStyles() {
         return {
             base: {
+                fontFamily: 'NanumBarunGothicUltraLight',
                 position: 'relative',
                 display: 'block',
                 boxSizing: 'border-box',
@@ -28,7 +29,7 @@ class NavItem extends React.Component {
                 boxSizing: 'border-box',
                 textDecoration: 'none',
                 backgroundColor: 'transparent',
-                color: '#6D6875',
+                color: 'white',
 
                 ':hover': {
                     color: '#333',

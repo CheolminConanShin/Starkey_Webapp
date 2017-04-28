@@ -7,6 +7,8 @@ import {PreviewPhoto} from './CenterPhoto'
 import Gallery from './CenterPhoto/Gallery.jsx'
 import ImageSlider from './ImageSlider'
 
+import MenuSection from './MenuSection'
+
 const styles = {
   imageSlider: {
     height: '60vw',
@@ -22,7 +24,7 @@ const DEFAULT_IMAGES = [
 	{ id: './image/centerPhoto/repair.jpg', caption: '전문 수리도구', orientation: 'landscape', useForDemo: true }, // https://unsplash.com/photos/XgF9e93Tkt0 (Ladybug)
 ];
 
-export default class Home extends React.Component {
+export class Home2 extends React.Component {
   constructor(props) {
     super(props)
     this.showGallery = this.showGallery.bind(this)
@@ -53,4 +55,16 @@ export default class Home extends React.Component {
       </div>
     )
   }
+}
+
+export default class Home extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        return (
+            <MenuSection/>
+        )
+    }
 }

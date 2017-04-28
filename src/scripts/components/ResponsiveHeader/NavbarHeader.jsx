@@ -8,6 +8,9 @@ const styles = {
     },
     sameRow: {
       display: 'inline-block'
+    },
+    icon: {
+        width: '12.2vw'
     }
 }
 
@@ -139,8 +142,9 @@ class NavbarHeader extends React.Component {
                 <span style={[defStyle.pseudoBefore]} />
                     {this.renderToggleButton()}
                     <a key="brand" style={[defStyle.brand, brandStyle && brandStyle]} href={href}>
-                      <div style={styles.sameRow}>{name}</div>
-                      <div style={Object.assign({}, styles.branch, styles.sameRow)}>{branch}</div>
+                      <div style={styles.sameRow}>
+                          <img style={styles.icon} src="./image/NewMenuSection/starkey-logo.png"/>
+                      </div>
                     </a>
                 <span style={[defStyle.pseudoAfter]} />
             </div>

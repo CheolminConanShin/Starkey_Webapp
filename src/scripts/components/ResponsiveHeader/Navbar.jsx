@@ -3,14 +3,14 @@ import Radium from 'radium';
 
 const defStyle = {
     navbar: {
-        backgroundColor: '#F7F7F7',
-        borderBottom: '2px solid #A9A9A9',
+        backgroundColor: 'rgba(0, 0, 0, 0)',
         borderRadius: '0px',
         position: 'relative',
         top: '0px',
         minHeight: '50px',
         display: 'block',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        paddingTop: '2vw'
     },
     container: {
         padding: '10px',

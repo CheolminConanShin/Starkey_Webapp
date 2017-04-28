@@ -7,14 +7,13 @@ class NavbarItems extends React.Component {
     getStyles() {
         let styles = {
             base: {
-                margin: '7.5px -15px',
                 listStyle: 'outside none none',
                 paddingLeft: '0',
                 boxSizing: 'border-box',
+                marginTop: '2vw',
 
                 fontSize: '23px',
                 float: 'left',
-                margin: '0',
                 marginLeft: '50',
 
                 '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
