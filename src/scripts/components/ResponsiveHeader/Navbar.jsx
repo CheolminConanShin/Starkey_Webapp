@@ -21,13 +21,13 @@ const defStyle = {
     },
     pseudoBefore: {
         display: 'table',
-        content: ' ',
+
         boxSizing: 'border-box'
     },
     pseudoAfter: {
         clear: 'both',
         display: 'table',
-        content: ' ',
+
         boxSizing: 'border-box'
     }
 };

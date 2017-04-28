@@ -16,7 +16,7 @@ export var HomeAbout = (
 
 const styles = {
     container: {
-      fontFamily: 'NanumGothic',
+      fontFamily: 'NanumBarunGothicBold',
       display: 'inline-block',
       marginTop: '-5vw'
     },

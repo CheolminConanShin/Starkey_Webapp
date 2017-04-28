@@ -1,31 +1,34 @@
 @font-face {
-  font-family: BMdohyeon;
-  src: url("../font/BMDOHYEON_otf.otf"), url("../font/BMDOHYEON_ttf.ttf");
+    font-family: NanumBarunGothicBold;
+    src: url("../font/NanumBarunGothicBold.eot"), url("../font/NanumBarunGothicBold.ttf"), url("../font/NanumBarunGothicBold.woff"), url("../font/NanumBarunGothicBold.woff2")
 }
 
 @font-face {
-  font-family: NanumGothic;
-  src: url("../font/NanumGothic.otf"), url("../font/NanumGothic.otf");;
+    font-family: NanumBarunGothicBold;
+    src: url("../font/NanumBarunGothicBold.eot"), url("../font/NanumBarunGothicBold.ttf"), url("../font/NanumBarunGothicBold.woff"), url("../font/NanumBarunGothicBold.woff2")
 }
 
-.slick-slider, .slick-list{
-  height: 100% !important;
+.slick-slider, .slick-list {
+    height: 100% !important;
 }
+
 .slick-track {
-  height: inherit;
+    height: inherit;
 }
+
 .slick-slide img {
-  height: inherit;
-  width: 100%;
+    height: inherit;
+    width: 100%;
 }
+
 .slick-dots {
     bottom: 0px;
     background: #FAF9F4;
 }
 
 body {
-  font-family: 'BMdohyeon';
-  color: #E7E7E7;
+    font-family: 'NanumBarunGothicBold';
+    color: #E7E7E7;
 }
 
 a, a:hover {

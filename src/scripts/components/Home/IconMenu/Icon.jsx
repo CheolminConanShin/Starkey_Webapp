@@ -13,7 +13,7 @@ const styles = {
     lineHeight: '3vw',
     color: '#E7E7E7',
     fontSize: '2vw',
-    fontFamily: 'NanumGothic'
+    fontFamily: 'NanumBarunGothicBold'
   },
   inheritSize: {
     width: '4vw',
