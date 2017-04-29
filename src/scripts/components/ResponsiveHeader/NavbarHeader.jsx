@@ -3,11 +3,11 @@ import Radium from 'radium';
 
 const styles = {
     branch: {
-      fontSize: '1.5vw',
-      color: '#E8B500'
+        fontSize: '1.5vw',
+        color: '#E8B500'
     },
     sameRow: {
-      display: 'inline-block'
+        display: 'inline-block'
     },
     icon: {
         width: '12.2vw'
@@ -15,7 +15,7 @@ const styles = {
 }
 
 class NavbarHeader extends React.Component {
-    displayName : 'Navigation bar header'
+    displayName: 'Navigation bar header'
 
     getStyles() {
         return {
@@ -74,15 +74,15 @@ class NavbarHeader extends React.Component {
                 boxSizing: 'border-box',
 
                 ':hover': {
-                  backgroundColor: '#ddd'
+                    backgroundColor: '#ddd'
                 },
 
                 ':focus': {
-                  outline: '0',
-                  backgroundColor: '#ddd'
+                    outline: '0',
+                    backgroundColor: '#ddd'
                 },
                 '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
-                  display: 'none'
+                    display: 'none'
                 }
             },
             srOnly: {
@@ -96,7 +96,7 @@ class NavbarHeader extends React.Component {
                 borderWidth: '0',
                 borderStyle: 'none',
                 boxSizing: 'border-box'
-              },
+            },
             iconBar: {
                 display: 'block',
                 width: '40px',
@@ -106,7 +106,7 @@ class NavbarHeader extends React.Component {
                 boxSizing: 'border-box'
             },
             burger: {
-              marginTop: '4px'
+                marginTop: '4px'
             },
             pseudoBefore: {
                 display: 'table',
@@ -125,12 +125,12 @@ class NavbarHeader extends React.Component {
     renderToggleButton() {
         const defStyle = this.getStyles();
         return (
-          <button type="button" style={[defStyle.navbarToggle]} onClick= {this.props.navbarToggle}>
-              <span style={[defStyle.srOnly]}>Toggle navigation</span>
-              <span style={[defStyle.iconBar]}></span>
-              <span style={[defStyle.iconBar, defStyle.burger]}></span>
-              <span style={[defStyle.iconBar, defStyle.burger]}></span>
-          </button>
+            <button type="button" style={[defStyle.navbarToggle]} onClick={this.props.navbarToggle}>
+                <span style={[defStyle.srOnly]}>Toggle navigation</span>
+                <span style={[defStyle.iconBar]}></span>
+                <span style={[defStyle.iconBar, defStyle.burger]}></span>
+                <span style={[defStyle.iconBar, defStyle.burger]}></span>
+            </button>
         );
     }
 
@@ -139,14 +139,14 @@ class NavbarHeader extends React.Component {
         const {href, name, branch, headerStyle, brandStyle} = this.props;
         return (
             <div key="header" style={[defStyle.header, headerStyle && headerStyle]}>
-                <span style={[defStyle.pseudoBefore]} />
-                    {this.renderToggleButton()}
-                    <a key="brand" style={[defStyle.brand, brandStyle && brandStyle]} href={href}>
-                      <div style={styles.sameRow}>
-                          <img style={styles.icon} src="./image/NewMenuSection/starkey-logo.png"/>
-                      </div>
-                    </a>
-                <span style={[defStyle.pseudoAfter]} />
+                <span style={[defStyle.pseudoBefore]}/>
+                {this.renderToggleButton()}
+                <a key="brand" style={[defStyle.brand, brandStyle && brandStyle]} href={href}>
+                    <div style={styles.sameRow}>
+                        <img style={styles.icon} src="./image/NewMenuSection/starkey-logo.png"/>
+                    </div>
+                </a>
+                <span style={[defStyle.pseudoAfter]}/>
             </div>
         );
     }

@@ -77,18 +77,18 @@ class DropdownMenu extends React.Component {
         }
         const {menuItems, style, menuItemStyle} = this.props;
         return (
-          <ul style={[defStyle.menu, style && style]}>
-              {menuItems.map(item => {
-                  return (
-                    <li key={menuItems.indexOf(item)}>
-                        <a key={item.name} style={[defStyle.link, menuItemStyle && menuItemStyle]}
-                            href={item.href}>{item.name}
-                        </a>
-                    </li>
-                  );
-              })}
-        </ul>
-      );
+            <ul style={[defStyle.menu, style && style]}>
+                {menuItems.map(item => {
+                    return (
+                        <li key={menuItems.indexOf(item)}>
+                            <a key={item.name} style={[defStyle.link, menuItemStyle && menuItemStyle]}
+                               href={item.href}>{item.name}
+                            </a>
+                        </li>
+                    );
+                })}
+            </ul>
+        );
     }
 }
 

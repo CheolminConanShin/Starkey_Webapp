@@ -2,7 +2,7 @@ import React from 'react';
 import Radium from 'radium';
 
 class NavItem extends React.Component {
-    displayName : 'Navigation bar item'
+    displayName: 'Navigation bar item'
 
     getStyles() {
         return {
@@ -53,9 +53,9 @@ class NavItem extends React.Component {
         const defStyle = this.getStyles();
         const {style, link, title, itemStyle} = this.props;
         return (
-          <li ref="list" style={[defStyle.base, style && style]}>
-              <a ref="link" href={link} style={[defStyle.link, itemStyle && itemStyle]}>{title}</a>
-          </li>
+            <li ref="list" style={[defStyle.base, style && style]}>
+                <a ref="link" href={link} style={[defStyle.link, itemStyle && itemStyle]}>{title}</a>
+            </li>
         );
     }
 }

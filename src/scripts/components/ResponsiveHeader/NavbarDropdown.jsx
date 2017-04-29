@@ -4,20 +4,16 @@ import Radium from 'radium';
 class NavbarDropdown extends React.Component {
     displayName: 'Navigation bar dropdown button'
 
-    state: {
-        open: false
-    }
-
     getStyles() {
         let styles = {
             dropdown: {
-              position: 'relative',
-              display: 'block',
-              boxSizing: 'border-box',
+                position: 'relative',
+                display: 'block',
+                boxSizing: 'border-box',
 
-              '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
-                  float: 'left'
-              }
+                '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
+                    float: 'left'
+                }
             },
             caret: {
                 display: 'inline-block',
@@ -61,6 +57,11 @@ class NavbarDropdown extends React.Component {
         }
         return styles;
     }
+    constructor(props) {
+        this.state = {
+            open: false
+        }
+    }
 
     renderChildren() {
         const {children, index, activeIndex} = this.props;
@@ -82,7 +83,7 @@ class NavbarDropdown extends React.Component {
     handleDocumentClick() {
         if (this.state.open) {
             this.setState({open: false});
-          // when all the dropdowns are closed, activeIndex is set to -1
+            // when all the dropdowns are closed, activeIndex is set to -1
             this.props.parentCallBack(-1);
         }
     }
@@ -107,9 +108,9 @@ class NavbarDropdown extends React.Component {
         if (index === activeIndex) {
             if (this.state.open) {
                 this.setState({open: false});
-              // when all the dropdowns are closed, activeIndex is set to -1
+                // when all the dropdowns are closed, activeIndex is set to -1
                 this.props.parentCallBack(-1);
-            }else {
+            } else {
                 this.setState({open: true});
             }
         } else {
@@ -121,14 +122,14 @@ class NavbarDropdown extends React.Component {
         const {style, name, itemStyle} = this.props;
         const defStyle = this.getStyles();
         return (
-          <li ref= "dropdown" style={[defStyle.dropdown, style && style]}>
-              <a ref="link" onClick={this.handleDropdownClick} href="#"
-                style={[defStyle.link, itemStyle && itemStyle]}>
-                  {name}{' '}
-                  <b style={[defStyle.caret]}></b>
-              </a>
-              {this.renderChildren()}
-          </li>
+            <li ref="dropdown" style={[defStyle.dropdown, style && style]}>
+                <a ref="link" onClick={this.handleDropdownClick} href="#"
+                   style={[defStyle.link, itemStyle && itemStyle]}>
+                    {name}{' '}
+                    <b style={[defStyle.caret]}></b>
+                </a>
+                {this.renderChildren()}
+            </li>
         );
     }
 }

@@ -25,22 +25,22 @@ const dropdownItems = [
 ]
 
 export default class ResponsiveHeader extends React.Component {
-  render() {
-    return(
-      <Navbar>
-          <NavbarHeader href="/" name="스타키보청기" branch="파주센터"/>
-          <NavbarItems>
-              {navitems.map(item => {
-                  return <NavItem key={navitems.indexOf(item)} link={item.link} title={item.title} />;
-              })}
-              {/*<NavbarDropdown name="Dropdown">
-                  <DropdownMenu menuItems={dropdownItems}/>
-              </NavbarDropdown>
-              <NavbarDropdown name="Dropdown">
-                  <DropdownMenu menuItems={dropdownItems}/>
-              </NavbarDropdown>*/}
-          </NavbarItems>
-      </Navbar>
-    )
-  }
+    render() {
+        return (
+            <Navbar>
+                <NavbarHeader href="/" name="스타키보청기" branch="파주센터"/>
+                <NavbarItems>
+                    {navitems.map(item => {
+                        return <NavItem key={navitems.indexOf(item)} link={item.link} title={item.title}/>;
+                    })}
+                    {/*<NavbarDropdown name="Dropdown">
+                     <DropdownMenu menuItems={dropdownItems}/>
+                     </NavbarDropdown>
+                     <NavbarDropdown name="Dropdown">
+                     <DropdownMenu menuItems={dropdownItems}/>
+                     </NavbarDropdown>*/}
+                </NavbarItems>
+            </Navbar>
+        )
+    }
 }

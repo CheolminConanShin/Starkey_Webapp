@@ -36,23 +36,23 @@ class Navbar extends React.Component {
     displayName: 'Navigation bar'
 
     constructor(props) {
-      super(props)
-      this.setState({
-        collapseIn: false
-      })
+        super(props)
+        this.setState({
+            collapseIn: false
+        })
 
-      this.renderChildren = this.renderChildren.bind(this)
-      this.navbarToggle = this.navbarToggle.bind(this)
+        this.renderChildren = this.renderChildren.bind(this)
+        this.navbarToggle = this.navbarToggle.bind(this)
     }
 
     renderChildren() {
         const {children} = this.props;
         return React.Children.map(children, (child) => {
             return React.cloneElement(child,
-              {
-                navbarToggle: this.navbarToggle,
-                collapseIn: this.state.collapseIn
-              }
+                {
+                    navbarToggle: this.navbarToggle,
+                    collapseIn: this.state.collapseIn
+                }
             );
         });
     }
@@ -65,13 +65,13 @@ class Navbar extends React.Component {
         const {navStyle, contStyle} = this.props;
         return (
             <nav ref="navbar" style={Object.assign({}, defStyle.navbar, navStyle)}>
-                <span style={[defStyle.pseudoBefore]} />
-                    <div ref="container" style={[defStyle.container, contStyle && contStyle]}>
-                        <span style={[defStyle.pseudoBefore]} />
-                            {this.renderChildren()}
-                        <span style={[defStyle.pseudoAfter]} />
-                    </div>
-                <span style={[defStyle.pseudoAfter]} />
+                <span style={[defStyle.pseudoBefore]}/>
+                <div ref="container" style={[defStyle.container, contStyle && contStyle]}>
+                    <span style={[defStyle.pseudoBefore]}/>
+                    {this.renderChildren()}
+                    <span style={[defStyle.pseudoAfter]}/>
+                </div>
+                <span style={[defStyle.pseudoAfter]}/>
             </nav>
         );
     }

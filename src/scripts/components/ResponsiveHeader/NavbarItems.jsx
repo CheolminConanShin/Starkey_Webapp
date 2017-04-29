@@ -2,7 +2,7 @@ import React from 'react';
 import Radium from 'radium';
 
 class NavbarItems extends React.Component {
-    displayName : 'Navigation list of items'
+    displayName: 'Navigation list of items'
 
     getStyles() {
         let styles = {
@@ -95,14 +95,14 @@ class NavbarItems extends React.Component {
         const defStyle = this.getStyles();
         const {style} = this.props;
         return (
-            <div ref ="collapse" style={[defStyle.collapse]}>
-                <span style={[defStyle.pseudoBefore]} />
-                    <ul ref="navitems" style={[defStyle.base, style && style]}>
-                        <span style={[defStyle.pseudoBefore]} />
-                          {this.renderChildren()}
-                        <span style={[defStyle.pseudoAfter]} />
-                    </ul>
-                <span style={[defStyle.pseudoAfter]} />
+            <div ref="collapse" style={[defStyle.collapse]}>
+                <span style={[defStyle.pseudoBefore]}/>
+                <ul ref="navitems" style={[defStyle.base, style && style]}>
+                    <span style={[defStyle.pseudoBefore]}/>
+                    {this.renderChildren()}
+                    <span style={[defStyle.pseudoAfter]}/>
+                </ul>
+                <span style={[defStyle.pseudoAfter]}/>
             </div>
         );
     }
