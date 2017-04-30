@@ -1,5 +1,6 @@
 import React from 'react'
 import TitleHeader from '../../TitleHeader'
+const MediaQuery = require('react-responsive')
 
 const styles = {
     container: {
@@ -95,3 +96,81 @@ export default class LocationPage extends React.Component {
         )
     }
 }
+
+const mainStyle = {
+    container: {
+        color: '#3f3f3f',
+        marginTop: '70px'
+    },
+    content: {
+        display: 'inline-block',
+        marginLeft: '5vw'
+    },
+    title: {
+        fontSize: '17px',
+        lineHeight: '32px',
+        fontFamily: 'NanumBarunGothicUltraLight'
+    },
+    address: {
+        fontSize: '22px',
+        lineHeight: '32px',
+        fontFamily: 'NanumBarunGothicBold',
+        marginBottom: '15px'
+    },
+    icon: {
+        width: '18px',
+        height: '18px',
+        marginRight: '20px'
+    },
+    phone: {
+        marginTop: '20px',
+        height: '54px',
+        lineHeight: '54px',
+        textAlign: 'center',
+        border: '1px solid #3e3e3e',
+        borderRadius: '100px'
+    },
+    imageWeb: {
+        width: '530px',
+        display: 'inline-block',
+        float: 'right',
+        marginRight: '60px'
+    },
+    imageMobile: {
+        width: '39vw',
+        display: 'inline-block',
+        float: 'right'
+    }
+}
+
+export var HomeLocation = (
+    <div style={mainStyle.container}>
+        <div style={mainStyle.content}>
+            <div style={mainStyle.title}>
+                스타키보청기 파주점
+            </div>
+            <div style={mainStyle.address}>
+                경기도 파주시 중앙로 189<br/>
+                파워프라자 202호
+            </div>
+            <a href="tel:031-947-9279">
+                <div style={mainStyle.phone}>
+                    <img style={mainStyle.icon} src='./image/NewMenuSection/phone.png'/>
+                    031-947-9279
+                </div>
+            </a>
+            <a href="tel:010-2111-3769">
+                <div style={mainStyle.phone}>
+                    <img style={mainStyle.icon} src='./image/NewMenuSection/phone.png'/>
+                    010-2111-3769
+                </div>
+            </a>
+        </div>
+        <MediaQuery query='(min-device-width: 420px)'>
+            <img style={mainStyle.imageWeb} src="./image/location.jpg"/>
+        </MediaQuery>
+        <MediaQuery query='(max-device-width: 421px)'>
+            <img style={mainStyle.imageMobile} src="./image/location.jpg"/>
+        </MediaQuery>
+    </div>
+)

@@ -1,6 +1,5 @@
 import React from 'react'
 import Section from './Section'
-// import {HomeAbout} from './About'
 import IconMenu from './IconMenu'
 import {Location} from './Location'
 import {PreviewPhoto} from './CenterPhoto'
@@ -9,13 +8,22 @@ import ImageSlider from './ImageSlider'
 
 import MenuSection from './MenuSection'
 import {ProductMain} from '../Product'
+import {HomeAbout} from './About'
+import {HomeLocation} from './Location'
 
 const styles = {
     imageSlider: {
         height: '55vw'
     },
     product: {
-        height: '40vw',
+        height: '500px',
+        backgroundColor: '#f8f8f8'
+    },
+    about: {
+        height: '700px'
+    },
+    location: {
+        height: '570px',
         backgroundColor: '#f8f8f8'
     }
 }
@@ -72,6 +80,8 @@ export default class Home extends React.Component {
                 <MenuSection/>
                 <Section additionalStyle={styles.imageSlider} title="공지사항 / 이벤트" content={ImageSlider}/>
                 <Section additionalStyle={styles.product} title="제품소개" content={ProductMain}/>
+                <Section additionalStyle={styles.about} title="원장 인사말" content={HomeAbout}/>
+                <Section additionalStyle={styles.location} title="오시는 길" content={HomeLocation}/>
             </div>
         )
     }
