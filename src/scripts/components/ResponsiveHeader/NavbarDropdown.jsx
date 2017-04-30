@@ -58,6 +58,7 @@ class NavbarDropdown extends React.Component {
         return styles;
     }
     constructor(props) {
+        super(props)
         this.state = {
             open: false
         }
