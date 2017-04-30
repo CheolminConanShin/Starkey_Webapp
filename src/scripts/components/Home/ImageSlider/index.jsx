@@ -5,15 +5,13 @@ const styles = {
     container: {
         margin: "0 auto",
         padding: 0,
-        width: "100%",
-        maxWidth: "900px",
-        height: "calc(100%)",
-        background: "#FAF9F4"
+        height: "100%",
     }
 }
 
 const settings = {
     dots: true,
+    dotsClass: 'slick-dots slick-thumb',
     adaptiveHeight: true,
     autoplay: true,
     arrows: false,

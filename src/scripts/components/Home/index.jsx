@@ -8,11 +8,15 @@ import Gallery from './CenterPhoto/Gallery.jsx'
 import ImageSlider from './ImageSlider'
 
 import MenuSection from './MenuSection'
+import {ProductMain} from '../Product'
 
 const styles = {
     imageSlider: {
-        height: '60vw',
-        maxHeight: '500px'
+        height: '55vw'
+    },
+    product: {
+        height: '40vw',
+        backgroundColor: '#f8f8f8'
     }
 }
 
@@ -64,7 +68,11 @@ export default class Home extends React.Component {
 
     render() {
         return (
-            <MenuSection/>
+            <div>
+                <MenuSection/>
+                <Section additionalStyle={styles.imageSlider} title="공지사항 / 이벤트" content={ImageSlider}/>
+                <Section additionalStyle={styles.product} title="제품소개" content={ProductMain}/>
+            </div>
         )
     }
 }
