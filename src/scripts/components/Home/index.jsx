@@ -13,17 +13,13 @@ import {HomeLocation} from './Location'
 
 const styles = {
     imageSlider: {
-        height: '55vw'
     },
     product: {
-        height: '500px',
         backgroundColor: '#f8f8f8'
     },
     about: {
-        height: '700px'
     },
     location: {
-        height: '570px',
         backgroundColor: '#f8f8f8'
     }
 }

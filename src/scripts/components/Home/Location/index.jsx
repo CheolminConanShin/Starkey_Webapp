@@ -100,11 +100,13 @@ export default class LocationPage extends React.Component {
 const mainStyle = {
     container: {
         color: '#3f3f3f',
-        marginTop: '70px'
+        marginTop: '70px',
+        textAlign: 'center'
     },
     content: {
         display: 'inline-block',
-        marginLeft: '5vw'
+        marginRight: '5vw',
+        textAlign: 'left'
     },
     title: {
         fontSize: '17px',
@@ -131,15 +133,15 @@ const mainStyle = {
         borderRadius: '100px'
     },
     imageWeb: {
-        width: '530px',
+        width: '40vw',
         display: 'inline-block',
-        float: 'right',
-        marginRight: '60px'
+        verticalAlign: 'top'
+
     },
     imageMobile: {
-        width: '39vw',
+        width: '40vw',
         display: 'inline-block',
-        float: 'right'
+        verticalAlign: 'top'
     }
 }
 

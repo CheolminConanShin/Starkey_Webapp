@@ -3,7 +3,7 @@ import React from 'react'
 const styles = {
     container: {
         width: '100%',
-        padding: '50px 150px 160px 150px',
+        padding: '50px 10vw',
     },
     title: {
         textAlign: 'center',

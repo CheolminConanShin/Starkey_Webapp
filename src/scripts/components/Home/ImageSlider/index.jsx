@@ -5,7 +5,7 @@ const styles = {
     container: {
         margin: "0 auto",
         padding: 0,
-        height: "100%",
+        width: '80%'
     }
 }
 

@@ -10,7 +10,7 @@ const navitems = [
     {link: '/#/', title: '홈'},
     {link: '/#/product', title: '제품소개'},
     {link: '/#/about', title: '센터소개'},
-    {link: '/board', title: '문의하기'},
+    {link: '/#/board', title: '문의하기'},
     // {link: '/#/location', title: '연락처/위치'},
     {link: 'http://blog.naver.com/starkeypaju', title: '블로그보기'}
 ];
