@@ -6,7 +6,8 @@ const styles = {
     container: {
         fontFamily: 'NanumBarunGothicBold',
         display: 'inline-block',
-        marginTop: '-5vw'
+        width: '100%',
+        padding: '3vw 15vw'
     },
     imageCenter: {
         width: '55vw',
@@ -35,28 +36,23 @@ const styles = {
         float: 'left'
     },
     title: {
-        fontSize: '3.5vw',
+        fontSize: '3vw',
         color: '#282344',
         fontWeight: 'bold'
     },
     description: {
-        fontSize: '2.5vw',
-        color: '#130E32',
-        marginLeft: '7vw',
-        marginTop: '8vw'
-    },
-    ceoDescription: {
-        fontSize: '2.5vw',
-        color: '#130E32',
-        marginLeft: '7vw',
-        marginTop: '8vw'
-    },
-    ceoHistory: {
         fontSize: '2vw',
         color: '#130E32',
-        marginRight: '7vw',
+    },
+    ceoDescription: {
+        fontSize: '2vw',
+        color: '#130E32',
+    },
+    ceoHistory: {
+        fontSize: '1.5vw',
+        color: '#130E32',
         marginTop: '5vw',
-        textAlign: 'end'
+        textAlign: 'right'
     }
 }
 
