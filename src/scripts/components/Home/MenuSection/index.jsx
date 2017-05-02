@@ -20,12 +20,14 @@ const styles = {
     titleBrand: {
         fontFamily: 'NanumBarunGothic',
         color: '#fdd189',
-        marginLeft: '6.2vw'
+        marginLeft: '6.2vw',
+        marginTop: '13vw'
     },
     titleBranch: {
         fontFamily: 'NanumBarunGothicBold',
         color: '#095985',
-        marginLeft: '30px'
+        marginLeft: '30px',
+        marginTop: '13vw'
     },
     description: {
         fontFamily: 'NanumBarunGothicUltraLight',
@@ -40,7 +42,6 @@ export default class MenuSection extends React.Component {
     render() {
         return (
             <div style={styles.container}>
-                <ResponsiveHeader/>
                 <div style={Object.assign({}, styles.title, styles.titleBrand)}>스타키 보청기</div>
                 <div style={Object.assign({}, styles.title, styles.titleBranch)}>파주센터</div>
                 <div style={styles.description}>

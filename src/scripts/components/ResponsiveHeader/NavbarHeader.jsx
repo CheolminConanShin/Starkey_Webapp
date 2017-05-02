@@ -61,7 +61,7 @@ class NavbarHeader extends React.Component {
                 position: 'relative',
                 float: 'right',
                 padding: '9px 10px',
-                marginTop: '8px',
+                marginTop: '25px',
                 marginRight: '15px',
                 marginBottom: '8px',
                 backgroundColor: 'transparent',

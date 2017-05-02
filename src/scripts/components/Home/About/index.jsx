@@ -121,7 +121,7 @@ export default class AboutPage extends React.Component {
     render() {
         return (
             <div>
-                <TitleHeader text='우리센터를 소개합니다'/>
+                <TitleHeader text='센터 소개'/>
                 <div>
                     <a onClick={this.changeContentCEO}><img style={styles.imageCEO} src='./image/about.png'/></a>
                     <a onClick={this.changeContentCenter}><img style={styles.imageCenter} src='./image/aboutHead.jpg'/></a>

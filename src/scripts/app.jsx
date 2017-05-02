@@ -10,6 +10,7 @@ import FreeBoard from './components/FreeBoard'
 
 const Index = (
     <div>
+        <ResponsiveHeader/>
         <Router>
             <div>
                 <Route exact path="/" component={Home}/>

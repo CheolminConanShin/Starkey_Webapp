@@ -54,19 +54,48 @@ const pageStyle = {
         float: 'left',
         color: '#130E32'
     },
+    leftSideMobile: {
+        padding: '3vw',
+        width: '100%',
+        float: 'left',
+        color: '#130E32',
+        fontSize: '3vw',
+        textAlign: 'center'
+    },
     centerText: {
         fontSize: '2.5vw'
+    },
+    centerTextMobile: {
+        fontSize: '3.5vw',
+        textAlign: 'center'
     },
     centerTextEnglish: {
         fontSize: '1.7vw',
         marginBottom: '4vw'
     },
+    centerTextEnglishMobile: {
+        fontSize: '2.7vw',
+        marginBottom: '4vw'
+    },
+    section: {
+        display: 'inline-block',
+        textAlign: 'left',
+        margin: '0px 70px'
+    },
     sectionHeader: {
         fontSize: '1.7vw',
         lineHeight: '5vw'
     },
+    sectionHeaderMobile: {
+        fontSize: '2.7vw',
+        lineHeight: '5vw'
+    },
     rightSide: {
         width: '65vw',
+        float: 'right'
+    },
+    rightSideMobile: {
+        width: '100%',
         float: 'right'
     },
     image: {
@@ -79,19 +108,40 @@ export default class LocationPage extends React.Component {
         return (
             <div>
                 <TitleHeader text='오시는 길'/>
-                <div style={pageStyle.leftSide}>
-                    <p style={pageStyle.centerText}>스타키보청기 파주점</p>
-                    <p style={pageStyle.centerTextEnglish}>Starkey Paju Center</p>
-                    <h style={pageStyle.sectionHeader}>주소</h>
-                    <p>경기도 파주시 중앙로 189</p>
-                    <p>파워프라자 202호</p>
-                    <h style={pageStyle.sectionHeader}>전화번호</h>
-                    <p><a href="tel:031-947-9279">031-947-9279</a></p>
-                    <p><a href="tel:010-2111-3769">010-2111-3769</a></p>
-                </div>
-                <div style={pageStyle.rightSide}>
-                    <img style={pageStyle.image} src='./image/location.jpg'/>
-                </div>
+                <MediaQuery query='(min-device-width: 420px)'>
+                    <div style={pageStyle.leftSide}>
+                        <p style={pageStyle.centerText}>스타키보청기 파주점</p>
+                        <p style={pageStyle.centerTextEnglish}>Starkey Paju Center</p>
+                        <h style={pageStyle.sectionHeader}>주소</h>
+                        <p>경기도 파주시 중앙로 189</p>
+                        <p>파워프라자 202호</p>
+                        <h style={pageStyle.sectionHeader}>전화번호</h>
+                        <p><a href="tel:031-947-9279">031-947-9279</a></p>
+                        <p><a href="tel:010-2111-3769">010-2111-3769</a></p>
+                    </div>
+                    <div style={pageStyle.rightSide}>
+                        <img style={pageStyle.image} src='./image/location.jpg'/>
+                    </div>
+                </MediaQuery>
+                <MediaQuery query='(max-device-width: 421px)'>
+                    <div style={pageStyle.leftSideMobile}>
+                        <p style={pageStyle.centerTextMobile}>스타키보청기 파주점</p>
+                        <p style={pageStyle.centerTextEnglishMobile}>Starkey Paju Center</p>
+                        <div style={pageStyle.section}>
+                            <h style={pageStyle.sectionHeaderMobile}>주소</h>
+                            <p>경기도 파주시 중앙로 189</p>
+                            <p>파워프라자 202호</p>
+                        </div>
+                        <div style={pageStyle.section}>
+                            <h style={pageStyle.sectionHeaderMobile}>전화번호</h>
+                            <p><a href="tel:031-947-9279">031-947-9279</a></p>
+                            <p><a href="tel:010-2111-3769">010-2111-3769</a></p>
+                        </div>
+                    </div>
+                    <div style={pageStyle.rightSideMobile}>
+                        <img style={pageStyle.image} src='./image/location.jpg'/>
+                    </div>
+                </MediaQuery>
             </div>
         )
     }
@@ -132,16 +182,11 @@ const mainStyle = {
         border: '1px solid #3e3e3e',
         borderRadius: '100px'
     },
-    imageWeb: {
+    image: {
         width: '40vw',
         display: 'inline-block',
         verticalAlign: 'top'
 
-    },
-    imageMobile: {
-        width: '40vw',
-        display: 'inline-block',
-        verticalAlign: 'top'
     }
 }
 
@@ -168,11 +213,6 @@ export var HomeLocation = (
                 </div>
             </a>
         </div>
-        <MediaQuery query='(min-device-width: 420px)'>
-            <img style={mainStyle.imageWeb} src="./image/location.jpg"/>
-        </MediaQuery>
-        <MediaQuery query='(max-device-width: 421px)'>
-            <img style={mainStyle.imageMobile} src="./image/location.jpg"/>
-        </MediaQuery>
+        <img style={mainStyle.image} src="./image/location.jpg"/>
     </div>
 )

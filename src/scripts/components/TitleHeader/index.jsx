@@ -6,11 +6,13 @@ const header = {
     },
     header: {
         width: '100%',
-        fontSize: '3vw',
-        padding: '1vw',
+        height: '113px',
+        lineHeight: '113px',
+        paddingRight: '70px',
+        fontSize: '2.5vw',
         textAlign: 'center',
         display: 'inline-block',
-        backgroundColor: '#FAF9F4'
+        backgroundColor: '#3dbdb6'
     }
 }
 

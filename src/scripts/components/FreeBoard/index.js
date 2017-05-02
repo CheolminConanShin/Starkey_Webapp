@@ -21,7 +21,7 @@ export default class FreeBoard extends React.Component {
     render() {
         return (
             <div>
-                <TitleHeader text='무엇이든 물어보세요'/>
+                <TitleHeader text='문의하기'/>
                 <ThreadDisplay database={this.database}/>
             </div>
         );

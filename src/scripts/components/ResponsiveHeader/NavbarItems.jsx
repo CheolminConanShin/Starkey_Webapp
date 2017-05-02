@@ -10,16 +10,20 @@ class NavbarItems extends React.Component {
                 listStyle: 'outside none none',
                 paddingLeft: '0',
                 boxSizing: 'border-box',
-                marginTop: '2vw',
-
                 fontSize: '23px',
                 float: 'left',
-                marginLeft: '50',
+                marginLeft: '77%',
+                backgroundColor: 'black',
+                position: 'absolute',
+                zIndex: '1',
 
                 '@media screen and (min-device-width: 768px) and (min-width: 768px)': {
                     fontSize: '17px',
                     float: 'right',
-                    marginLeft: '0'
+                    marginLeft: '0px',
+                    marginTop: '32px',
+                    backgroundColor: 'rgba(0,0,0,0)',
+                    position: 'relative'
                 }
             },
             collapse: {

@@ -5,15 +5,12 @@ const defStyle = {
     navbar: {
         backgroundColor: 'rgba(0, 0, 0, 0)',
         borderRadius: '0px',
-        position: 'relative',
-        top: '0px',
-        minHeight: '50px',
+        position: 'absolute',
+        width: '100%',
         display: 'block',
         boxSizing: 'border-box',
-        paddingTop: '2vw'
     },
     container: {
-        padding: '10px',
         marginRight: 'auto',
         marginLeft: 'auto',
         boxSizing: 'border-box',
@@ -21,13 +18,11 @@ const defStyle = {
     },
     pseudoBefore: {
         display: 'table',
-
         boxSizing: 'border-box'
     },
     pseudoAfter: {
         clear: 'both',
         display: 'table',
-
         boxSizing: 'border-box'
     }
 };

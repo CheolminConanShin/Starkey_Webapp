@@ -32,12 +32,12 @@ class NavItem extends React.Component {
                 color: 'white',
 
                 ':hover': {
-                    color: '#333',
+                    color: 'gray',
                     backgroundColor: 'transparent'
                 },
 
                 ':focus': {
-                    color: '#333',
+                    color: 'gray',
                     backgroundColor: 'transparent'
                 },
 
