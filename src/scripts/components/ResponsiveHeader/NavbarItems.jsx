@@ -13,7 +13,7 @@ class NavbarItems extends React.Component {
                 fontSize: '23px',
                 float: 'left',
                 marginLeft: '77%',
-                backgroundColor: 'black',
+                backgroundColor: '#34A29D',
                 position: 'absolute',
                 zIndex: '1',
 
