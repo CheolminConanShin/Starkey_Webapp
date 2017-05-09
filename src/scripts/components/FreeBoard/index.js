@@ -10,8 +10,8 @@ export default class FreeBoard extends React.Component {
         super(props);
         const config =
             {
-                apiKey: "AIzaSyC_cBLBL8CIr4ZidW_L03_XXxMcnqbF-OU",
-                databaseURL: "https://starkey-v2.firebaseio.com/"
+                apiKey: "AIzaSyCiSpMJKJGFvk5ftgLyP8_dUwF8qU7y6g4",
+                databaseURL: "https://starkey-web.firebaseio.com/"
             }
 
         this.app = firebase.initializeApp(config);
