@@ -22,8 +22,8 @@ const pageStyle = {
 }
 
 const eventA = {
-    image: './image/parentsday.jpg',
-    title: '어버이날 이벤트'
+    image: './image/HappyNewYear`.jpg',
+    title: '새해 복 많이 받으세요'
 }
 const eventB = {
     image: './image/AidIncrease.png',

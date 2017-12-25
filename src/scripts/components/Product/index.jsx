@@ -1,5 +1,6 @@
 import React from 'react'
 import TitleHeader from '../TitleHeader'
+import $ from 'jquery'
 const MediaQuery = require('react-responsive')
 const styles = {
     container: {
@@ -25,27 +26,16 @@ const styles = {
     }
 }
 
-// const url = 'http://www.starkey.co.kr/product/product/bojung_custom.php'
-const url = 'https://unblockallwebsite.com/open.php?u=dR8mQBKVXlpKmZ%2FNgrmTK47gnIXwy3BWYc66YsYXV8S9o3YXU0o4qFafXrwB0%2F5Rm5gsokaT&b=4&f=norefer'
+// const url = 'https://unblockallwebsite.com/open.php?u=dR8mQBKVXlpKmZ%2FNgrmTK47gnIXwy3BWYc66YsYXV8S9o3YXU0o4qFafXrwB0%2F5Rm5gsokaT&b=4&f=norefer'
+// const url = 'https://www.google.co.kr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjputKvnJXUAhUFp5QKHfrXA4wQFggmMAA&url=http%3A%2F%2Fwww.starkey.co.kr%2Fproduct%2Fproduct%2Fbojung_custom.php&usg=AFQjCNEER08qF03t-xurnvU99a3SEzi2tA&sig2=65jlSiQ2Ln-Pv5BMikzJaQ'
+// const url = 'https://server4.kproxy.com/servlet/redirect.srv/swq/swl/sjqxfpjj/spqr/p1/product/product/bojung_custom.phphttps://server4.kproxy.com/servlet/redirect.srv/swq/swl/sjqxfpjj/spqr/p1/product/product/bojung_custom.php'
 
 export default class ProductPage extends React.Component {
     render() {
-        return (
-            <div>
-                <TitleHeader text='제품 소개'/>
-                <div style={styles.container}>
-                    <MediaQuery query='(min-device-width: 1224px)'>
-                        <iframe style={styles.iframeWeb} src={url}></iframe>
-                    </MediaQuery>
-                    <MediaQuery query='(max-device-width: 1224px)'>
-                        <iframe style={styles.iframeMobile} src={url}></iframe>
-                    </MediaQuery>
-                </div>
-            </div>
-        )
+        window.location='http://www.starkey.co.kr/product/product/bojung_custom.php'
     }
 }
-
+//
 const mainStyle = {
     container: {
         textAlign: 'center',

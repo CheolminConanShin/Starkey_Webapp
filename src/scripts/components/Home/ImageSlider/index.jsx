@@ -22,8 +22,8 @@ const settings = {
 const ImageSlider = (
     <div style={styles.container}>
         <Slider {...settings}>
+            <div><img src='./image/HappyNewYear.png'/></div>
             <div><img src='./image/StarkeyLogo.jpg'/></div>
-            <div><img src='./image/parentsday.jpg'/></div>
             <div><img src='./image/OutstandingCenter.png'/></div>
             <div><img src='./image/AidIncrease.png'/></div>
         </Slider>
