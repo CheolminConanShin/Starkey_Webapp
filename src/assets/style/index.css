@@ -1,18 +1,3 @@
-@font-face {
-    font-family: NanumBarunGothic;
-    src: url("../font/NanumBarunGothic.eot"), url("../font/NanumBarunGothic.ttf"), url("../font/NanumBarunGothic.woff"), url("../font/NanumBarunGothic.woff2")
-}
-
-@font-face {
-    font-family: NanumBarunGothicBold;
-    src: url("../font/NanumBarunGothicBold.eot"), url("../font/NanumBarunGothicBold.ttf"), url("../font/NanumBarunGothicBold.woff"), url("../font/NanumBarunGothicBold.woff2")
-}
-
-@font-face {
-    font-family: NanumBarunGothicUltraLight;
-    src: url("../font/NanumBarunGothicUltraLight.eot"), url("../font/NanumBarunGothicUltraLight.ttf"), url("../font/NanumBarunGothicUltraLight.woff"), url("../font/NanumBarunGothicUltraLight.woff2")
-}
-
 .slick-slider, .slick-list {
     height: 100% !important;
 }
@@ -43,7 +28,6 @@ hr {
 }
 
 body {
-    font-family: 'NanumBarunGothicBold';
     color: #E7E7E7;
 }
 
